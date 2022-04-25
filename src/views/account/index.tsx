@@ -27,7 +27,7 @@ import AccountNftsPanel from "components/NftsPanel/AccountNftsPanel";
 import { FilterButton } from "components/Buttons";
 import MobileFilterModal from "components/Modals/MobileFilterModal";
 import AccountNftsFilters from "components/NftsPanel/AccountNftsFilters";
-import { MultiselectSidebar } from "components/Multiselect/MultiselectSidebar";
+import { MultiselectSidebar } from "../../components/Multiselect/MultiselectSidebar";
 import { useMultiselect } from "components/Multiselect/hooks/useMultiselect";
 import { ActivityFilters, MobileActivityFilters } from "components/Activity";
 import { MultiselectItems } from "components/Multiselect/MultiselectItems";
