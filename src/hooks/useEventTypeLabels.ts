@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { EventType } from "types/graphql";
+import { EventType } from "../types/graphql";
 
 export const useEventTypeLabels = (): Record<EventType, string> => {
   const { t } = useTranslation();
