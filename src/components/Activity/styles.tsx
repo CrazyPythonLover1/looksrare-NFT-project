@@ -1,3 +1,33 @@
+// import React from "react";
+// import { Flex, FlexProps, TagLabel, TagLeftIcon } from "@chakra-ui/react";
+// import { useTranslation } from "react-i18next";
+// import {
+//   AddAltIcon,
+//   MintIcon,
+//   OfferIcon,
+//   ShoppingCartIcon,
+//   Text,
+//   ArrowHorizontalIcon,
+//   MisuseAltIcon,
+//   Tag,
+//   TagProps,
+//   ViewOffIcon,
+// } from "uikit";
+// import { formatToSignificant } from "utils/format";
+// import { isAddressEqual } from "utils/guards";
+// import { STRATEGIES_ADDRESS } from "config";
+// import { getCurrencyConfig } from "config/currencies";
+// import { useUserProfileDisplay } from "hooks/useUserProfileDisplay";
+// import { EventType, EventOrder } from "types/graphql";
+// import { AvatarWithLink } from "components/Avatar";
+
+
+
+
+
+
+
+
 import React from "react";
 import { Flex, FlexProps, TagLabel, TagLeftIcon } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
@@ -6,20 +36,27 @@ import {
   MintIcon,
   OfferIcon,
   ShoppingCartIcon,
-  Text,
   ArrowHorizontalIcon,
   MisuseAltIcon,
-  Tag,
-  TagProps,
   ViewOffIcon,
-} from "uikit";
-import { formatToSignificant } from "utils/format";
-import { isAddressEqual } from "utils/guards";
-import { STRATEGIES_ADDRESS } from "config";
-import { getCurrencyConfig } from "config/currencies";
-import { useUserProfileDisplay } from "hooks/useUserProfileDisplay";
-import { EventType, EventOrder } from "types/graphql";
-import { AvatarWithLink } from "components/Avatar";
+} from "../../uikit/Icons/index";
+import { Text } from "../../uikit/Text/Text";
+import { Tag, TagProps } from "../../uikit/Tag/Tag";
+import { formatToSignificant } from "../../utils/format";
+import { isAddressEqual } from "../../utils/guards";
+import { STRATEGIES_ADDRESS } from "../../config/addresses";
+import { getCurrencyConfig } from "../../config/currencies";
+import { useUserProfileDisplay } from "../../hooks/useUserProfileDisplay";
+import { EventType, EventOrder } from "../../types/graphql";
+import { AvatarWithLink } from "../Avatar/AvatarWithLink";
+
+
+
+
+
+
+
+
 
 export const StandardOfferTag = (props: TagProps) => {
   const { t } = useTranslation();

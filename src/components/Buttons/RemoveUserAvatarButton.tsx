@@ -1,8 +1,18 @@
+// import { useTranslation } from "react-i18next";
+// import noop from "lodash/noop";
+// import { useUpdateUserAvatar, UseUpdateUserAvatarOptions } from "hooks/graphql/user";
+// import { useToast } from "hooks/useToast";
+// import { AuthorizedActionButton, AuthorizedActionButtonProps } from "components/Modals/SignInModal";
+
+
+
 import { useTranslation } from "react-i18next";
 import noop from "lodash/noop";
-import { useUpdateUserAvatar, UseUpdateUserAvatarOptions } from "hooks/graphql/user";
-import { useToast } from "hooks/useToast";
-import { AuthorizedActionButton, AuthorizedActionButtonProps } from "components/Modals/SignInModal";
+import { useUpdateUserAvatar, UseUpdateUserAvatarOptions } from "../../hooks/graphql/user";
+import { useToast } from "../../hooks/useToast";
+import { AuthorizedActionButton, AuthorizedActionButtonProps } from "../Modals/SignInModal/AuthorizedActionButton";
+
+
 
 export interface RemoveUserAvatarButtonProps extends Omit<AuthorizedActionButtonProps, "onAuthSuccess"> {
   onSuccess?: UseUpdateUserAvatarOptions["onSuccess"];

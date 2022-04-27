@@ -1,6 +1,15 @@
+// import { Trans } from "next-i18next";
+// import { Text } from "uikit";
+// import intervalToDuration from "date-fns/intervalToDuration";
+
+
+
 import { Trans } from "next-i18next";
-import { Text } from "uikit";
+import { Text } from "../../uikit/Text/Text";
 import intervalToDuration from "date-fns/intervalToDuration";
+
+
+
 
 interface Props {
   start: number | Date;

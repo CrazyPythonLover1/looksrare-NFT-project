@@ -1,13 +1,31 @@
+// import { Flex, FlexProps, Box } from "@chakra-ui/react";
+// import { formatDistanceToNowStrict } from "date-fns";
+// import { formatTimestampAsDateString } from "utils/format";
+// import { useTranslation } from "react-i18next";
+// import { Event, EventType, OrderStatus } from "types/graphql";
+// import { ExternalLink, Text, Popover, TooltipText } from "uikit";
+// import { timeAgo, timestampInMs } from "utils/date";
+// import { getFloorPricePercentDifference, useFloorPriceText } from "utils/floorPricePercentHelpers";
+// import { ActivityAddress, ActivityAmount, ActivityTag } from ".";
+// import { getExplorerLink } from "utils/chains";
+
+
+
+
 import { Flex, FlexProps, Box } from "@chakra-ui/react";
 import { formatDistanceToNowStrict } from "date-fns";
-import { formatTimestampAsDateString } from "utils/format";
+import { formatTimestampAsDateString } from "../../utils/format";
 import { useTranslation } from "react-i18next";
-import { Event, EventType, OrderStatus } from "types/graphql";
-import { ExternalLink, Text, Popover, TooltipText } from "uikit";
-import { timeAgo, timestampInMs } from "utils/date";
-import { getFloorPricePercentDifference, useFloorPriceText } from "utils/floorPricePercentHelpers";
-import { ActivityAddress, ActivityAmount, ActivityTag } from ".";
-import { getExplorerLink } from "utils/chains";
+import { Event, EventType, OrderStatus } from "../../types/graphql";
+import { ExternalLink } from "../../uikit/Link/Link";
+import { Text, TooltipText } from "../../uikit/Text/Text";
+import Popover from "../../uikit/Popover/Popover";
+import { timeAgo, timestampInMs } from "../../utils/date";
+import { getFloorPricePercentDifference, useFloorPriceText } from "../../utils/floorPricePercentHelpers";
+import { ActivityAddress, ActivityAmount, ActivityTag } from "./styles";
+import { getExplorerLink } from "../../utils/chains";
+
+
 
 export interface SingleNftActivityRowProps extends FlexProps {
   event: Event;

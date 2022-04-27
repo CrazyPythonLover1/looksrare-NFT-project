@@ -1,7 +1,18 @@
+// import React, { useState } from "react";
+// import { Box, AspectRatioProps, BoxProps, AspectRatio, Skeleton } from "@chakra-ui/react";
+// import { Image } from "components/Image";
+// import { Blockie } from "./Blockie";
+
+
+
+
 import React, { useState } from "react";
 import { Box, AspectRatioProps, BoxProps, AspectRatio, Skeleton } from "@chakra-ui/react";
-import { Image } from "components/Image";
+import { Image } from "../Image";
 import { Blockie } from "./Blockie";
+
+
+
 
 export interface AvatarProps extends AspectRatioProps {
   address: string;

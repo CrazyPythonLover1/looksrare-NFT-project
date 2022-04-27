@@ -1,6 +1,17 @@
+// import { useTranslation } from "react-i18next";
+// import { ButtonProps, EtherscanIcon, Popover, TooltipText, IconProps } from "uikit";
+// import { IconLinkButton } from "./IconLinkButton";
+
+
 import { useTranslation } from "react-i18next";
-import { ButtonProps, EtherscanIcon, Popover, TooltipText, IconProps } from "uikit";
+import { ButtonProps } from "../../uikit/Button/Button";
+import { EtherscanIcon } from "../../uikit/Icons";
+import Popover from "../../uikit/Popover/Popover";
+import { TooltipText } from "../../uikit/Text/Text";
+import { IconProps } from "../../uikit/Icons/Icon";
 import { IconLinkButton } from "./IconLinkButton";
+
+
 
 export interface EtherscanLinkButtonProps extends ButtonProps {
   href: string;

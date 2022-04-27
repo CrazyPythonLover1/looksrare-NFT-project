@@ -1,7 +1,17 @@
+// import { IconButton, Menu, MenuButton, MenuList, MenuItem, useClipboard } from "@chakra-ui/react";
+// import { useTranslation } from "react-i18next";
+// import { ButtonProps, IconProps, ShareIcon } from "uikit";
+// import { currentChainInfo } from "config";
+
+
+
 import { IconButton, Menu, MenuButton, MenuList, MenuItem, useClipboard } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { ButtonProps, IconProps, ShareIcon } from "uikit";
-import { currentChainInfo } from "config";
+import { ButtonProps } from "../../uikit/Button/Button";
+import { IconProps } from "../../uikit/Icons/Icon";
+import { ShareIcon } from "../../uikit/Icons";
+import { currentChainInfo } from "../../config/chains";
+
 
 interface ShareButtonProps extends ButtonProps {
   shareText: string;

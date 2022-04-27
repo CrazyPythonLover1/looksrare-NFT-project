@@ -1,14 +1,31 @@
+// import { useEffect, useMemo, useRef, useState } from "react";
+// import { Box, Flex, FlexProps, IconButton } from "@chakra-ui/react";
+// import flatpickr from "flatpickr";
+// import { format } from "date-fns";
+// import { Instance } from "flatpickr/dist/types/instance";
+// import minMaxTimePlugin from "flatpickr/dist/plugins/minMaxTimePlugin";
+// import { useDurationLabels, DurationOption } from "hooks/useDurationLabels";
+// import { DropdownMenu } from "components/DropdownMenu";
+// import { CalendarIcon, CloseIcon } from "uikit";
+// import { formatTimestampAsDateString } from "utils/format";
+// import { CustomDateDisplay } from "./CustomDateDisplay";
+
+
+
+
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Box, Flex, FlexProps, IconButton } from "@chakra-ui/react";
 import flatpickr from "flatpickr";
 import { format } from "date-fns";
 import { Instance } from "flatpickr/dist/types/instance";
 import minMaxTimePlugin from "flatpickr/dist/plugins/minMaxTimePlugin";
-import { useDurationLabels, DurationOption } from "hooks/useDurationLabels";
-import { DropdownMenu } from "components/DropdownMenu";
-import { CalendarIcon, CloseIcon } from "uikit";
-import { formatTimestampAsDateString } from "utils/format";
+import { useDurationLabels, DurationOption } from "../../hooks/useDurationLabels";
+import { DropdownMenu } from "../DropdownMenu/DropdownMenu";
+import { CalenderIcon, CloseIcon } from "../../uikit/Icons";
+import { formatTimestampAsDateString } from "../../utils/format";
 import { CustomDateDisplay } from "./CustomDateDisplay";
+
+
 
 interface DurationPickerProps extends FlexProps {
   onDateUpdate: (timestamp: number) => void;
@@ -118,7 +135,7 @@ export const DurationPicker = ({ onDateUpdate, ...props }: DurationPickerProps) 
           visibility={hasPickedCustomDatetime ? "hidden" : "visible"}
           borderRadius={0}
         >
-          <CalendarIcon boxSize={5} />
+          <CalenderIcon boxSize={5} />
         </IconButton>
       </Box>
     </Flex>

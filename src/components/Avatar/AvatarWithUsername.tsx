@@ -1,7 +1,16 @@
+// import { Flex, FlexProps, AspectRatioProps } from "@chakra-ui/react";
+// import { TextProps } from "uikit";
+// import { Avatar, AvatarProps } from "./Avatar";
+// import { UserProfileDisplay } from "components/UserProfileDisplay";
+
+
+
+
 import { Flex, FlexProps, AspectRatioProps } from "@chakra-ui/react";
-import { TextProps } from "uikit";
+import { TextProps } from "../../uikit/Text/Text";
 import { Avatar, AvatarProps } from "./Avatar";
-import { UserProfileDisplay } from "components/UserProfileDisplay";
+import { UserProfileDisplay } from "../UserProfileDisplay";
+
 
 export interface AvatarWithUsernameProps extends AvatarProps, FlexProps {
   textProps?: TextProps;

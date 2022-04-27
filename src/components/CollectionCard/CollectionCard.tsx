@@ -1,13 +1,31 @@
+// import Link from "next/link";
+// import { Box, BoxProps, Flex } from "@chakra-ui/react";
+// import { useWeb3React } from "@web3-react/core";
+// import { useTranslation } from "next-i18next";
+// import { Collection } from "types/graphql";
+// import { Button, Text } from "uikit";
+// import { Avatar } from "components/Avatar";
+// import { isAddressEqual } from "utils/guards";
+// import VerifiedButton from "components/Modals/VerifiedModal/VerifiedButton";
+// import { Royalties } from "./Royalties";
+
+
+
+
 import Link from "next/link";
 import { Box, BoxProps, Flex } from "@chakra-ui/react";
 import { useWeb3React } from "@web3-react/core";
 import { useTranslation } from "next-i18next";
-import { Collection } from "types/graphql";
-import { Button, Text } from "uikit";
-import { Avatar } from "components/Avatar";
-import { isAddressEqual } from "utils/guards";
-import VerifiedButton from "components/Modals/VerifiedModal/VerifiedButton";
+import { Collection } from "../../types/graphql";
+import { Button } from "../../uikit/Button/Button";
+import { Text } from "../../uikit/Text/Text";
+import { Avatar } from "../Avatar/Avatar";
+import { isAddressEqual } from "../../utils/guards";
+import VerifiedButton from "../Modals/VerifiedModal/VerifiedButton";
 import { Royalties } from "./Royalties";
+
+
+
 
 interface CollectionCardProps extends BoxProps {
   collection: Collection;

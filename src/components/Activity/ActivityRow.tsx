@@ -1,19 +1,44 @@
+// import { Box, Flex, Grid, GridItem, GridProps } from "@chakra-ui/react";
+// import { formatDistanceToNowStrict } from "date-fns";
+// import NextLink from "next/link";
+// import { useTranslation } from "react-i18next";
+// import { STRATEGIES_ADDRESS } from "config";
+// import { formatTimestampAsDateString } from "utils/format";
+// import { Event, EventType, OrderStatus } from "types/graphql";
+// import { ExternalLink, Text, Popover, TooltipText } from "uikit";
+// import { isAddressEqual } from "utils/guards";
+// import { timeAgo, timestampInMs } from "utils/date";
+// import { getFloorPricePercentDifference, useFloorPriceText } from "utils/floorPricePercentHelpers";
+// import { getExplorerLink } from "utils/chains";
+// import { Avatar } from "components/Avatar";
+// import { TextButton } from "components/Buttons";
+// import { Image } from "components/Image";
+// import { ActivityAddress, ActivityAmount, ActivityTag } from ".";
+
+
+
+
+
 import { Box, Flex, Grid, GridItem, GridProps } from "@chakra-ui/react";
 import { formatDistanceToNowStrict } from "date-fns";
 import NextLink from "next/link";
 import { useTranslation } from "react-i18next";
-import { STRATEGIES_ADDRESS } from "config";
-import { formatTimestampAsDateString } from "utils/format";
-import { Event, EventType, OrderStatus } from "types/graphql";
-import { ExternalLink, Text, Popover, TooltipText } from "uikit";
-import { isAddressEqual } from "utils/guards";
-import { timeAgo, timestampInMs } from "utils/date";
-import { getFloorPricePercentDifference, useFloorPriceText } from "utils/floorPricePercentHelpers";
-import { getExplorerLink } from "utils/chains";
-import { Avatar } from "components/Avatar";
-import { TextButton } from "components/Buttons";
-import { Image } from "components/Image";
-import { ActivityAddress, ActivityAmount, ActivityTag } from ".";
+import { STRATEGIES_ADDRESS } from "../../config/addresses";
+import { formatTimestampAsDateString } from "../../utils/format";
+import { Event, EventType, OrderStatus } from "../../types/graphql";
+import { ExternalLink } from "../../uikit/Link/Link";
+import { Text, TooltipText } from "../../uikit/Text/Text";
+import Popover from "../../uikit/Popover/Popover";
+import { isAddressEqual } from "../../utils/guards";
+import { timeAgo, timestampInMs } from "../../utils/date";
+import { getFloorPricePercentDifference, useFloorPriceText } from "../../utils/floorPricePercentHelpers";
+import { getExplorerLink } from "../../utils/chains";
+import { TextButton } from "../Buttons/TextButton";
+import { Image } from "../Image";
+import { ActivityAddress, ActivityAmount, ActivityTag } from "./styles";
+
+
+
 
 export interface ActivityRowProps extends GridProps {
   event: Event;

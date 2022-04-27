@@ -1,8 +1,22 @@
+// import { Flex, FlexProps } from "@chakra-ui/react";
+// import { BigNumber } from "ethers";
+// import { useTranslation } from "next-i18next";
+// import { InformationIcon, Popover, Text, TooltipText } from "uikit";
+// import { formatFees } from "utils/format";
+
+
+
+
 import { Flex, FlexProps } from "@chakra-ui/react";
 import { BigNumber } from "ethers";
 import { useTranslation } from "next-i18next";
-import { InformationIcon, Popover, Text, TooltipText } from "uikit";
-import { formatFees } from "utils/format";
+// import { InformationIcon, Popover, Text, TooltipText } from "uikit";
+import { InformationIcon } from "../../uikit/Icons";
+import Popover from "../../uikit/Popover/Popover";
+import { Text, TooltipText } from "../../uikit/Text/Text";
+import { formatFees } from "../../utils/format";
+
+
 
 export interface ProtocolPopoverProps extends FlexProps {
   fee?: BigNumber;

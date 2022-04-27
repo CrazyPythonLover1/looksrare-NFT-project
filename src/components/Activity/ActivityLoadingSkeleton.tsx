@@ -1,5 +1,5 @@
 import { Box, Flex, Skeleton } from "@chakra-ui/react";
-import { EVENTS_PER_PAGE } from "config";
+import { EVENTS_PER_PAGE } from "../../config/constants";
 import times from "lodash/times";
 import uniqueId from "lodash/uniqueId";
 

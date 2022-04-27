@@ -1,11 +1,29 @@
+// import { useWeb3React } from "@web3-react/core";
+// import { useTranslation } from "next-i18next";
+// import { Flex, FlexProps, Link, LinkProps, AspectRatioProps, Box } from "@chakra-ui/react";
+// import NextLink from "next/link";
+// import { formatAddressUsername } from "utils/format";
+// import { isAddressEqual } from "utils/guards";
+// import { Popover, RainbowText, RainbowTextProps, Text, VerifiedIcon } from "uikit";
+// import { Avatar, AvatarProps } from "./Avatar";
+
+
+
+
 import { useWeb3React } from "@web3-react/core";
 import { useTranslation } from "next-i18next";
 import { Flex, FlexProps, Link, LinkProps, AspectRatioProps, Box } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { formatAddressUsername } from "utils/format";
-import { isAddressEqual } from "utils/guards";
-import { Popover, RainbowText, RainbowTextProps, Text, VerifiedIcon } from "uikit";
+import { formatAddressUsername } from "../../utils/format";
+import { isAddressEqual } from "../../utils/guards";
+import Popover from "../../uikit/Popover/Popover";
+import { RainbowText, RainbowTextProps, Text } from "../../uikit/Text/Text";
+import { VerifiedIcon } from "../../uikit/Icons";
 import { Avatar, AvatarProps } from "./Avatar";
+
+
+
+
 
 export interface AvatarWithLinkProps extends AvatarProps, FlexProps {
   href: string;

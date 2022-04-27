@@ -1,5 +1,13 @@
+// import { Flex, FlexProps } from "@chakra-ui/react";
+// import { EthHalfIcon, WethHalfIcon, Text, TextProps } from "uikit";
+
+
+
 import { Flex, FlexProps } from "@chakra-ui/react";
-import { EthHalfIcon, WethHalfIcon, Text, TextProps } from "uikit";
+import { EthHalfIcon, WethHalfIcon } from "../../uikit/Icons";
+import { Text, TextProps } from "../../uikit/Text/Text";
+
+
 
 interface AmountProps extends FlexProps {
   icon?: typeof EthHalfIcon | typeof WethHalfIcon;

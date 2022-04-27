@@ -1,10 +1,23 @@
+// import { Box, BoxProps, Flex, FlexProps, Grid, GridItem, Skeleton } from "@chakra-ui/react";
+// import PercentChangeLabel from "components/PercentChangeLabel";
+// import { BigNumberish } from "ethers";
+// import { useTranslation } from "next-i18next";
+// import { Text, TextProps } from "uikit";
+// import { formatToSignificant } from "utils/format";
+// import { Amount } from "./Amount";
+
+
+
+
 import { Box, BoxProps, Flex, FlexProps, Grid, GridItem, Skeleton } from "@chakra-ui/react";
-import PercentChangeLabel from "components/PercentChangeLabel";
+import PercentChangeLabel from "../PercentChangeLabel";
 import { BigNumberish } from "ethers";
 import { useTranslation } from "next-i18next";
-import { Text, TextProps } from "uikit";
-import { formatToSignificant } from "utils/format";
+import { Text, TextProps } from "../../uikit/Text/Text";
+import { formatToSignificant } from "../../utils/format";
 import { Amount } from "./Amount";
+
+
 
 export const gridTemplateColumns = "4fr minmax(0, 2fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr)";
 

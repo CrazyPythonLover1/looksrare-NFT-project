@@ -1,8 +1,22 @@
+// import React from "react";
+// import { ActivityFilterList, ActivityResults } from "components/Activity";
+// import { useInfiniteEvents } from "hooks/graphql/events";
+// import { Box } from "@chakra-ui/react";
+// import { EventFilter } from "types/graphql";
+
+
+
+
 import React from "react";
-import { ActivityFilterList, ActivityResults } from "components/Activity";
-import { useInfiniteEvents } from "hooks/graphql/events";
+import { ActivityFilterList } from "./ActivityFilterList";
+import { ActivityResults } from "./ActivityResults";
+import { useInfiniteEvents } from "../../hooks/graphql/events";
 import { Box } from "@chakra-ui/react";
-import { EventFilter } from "types/graphql";
+import { EventFilter } from "../../types/graphql";
+
+
+
+
 
 interface ActivityPanelProps {
   filters: EventFilter;

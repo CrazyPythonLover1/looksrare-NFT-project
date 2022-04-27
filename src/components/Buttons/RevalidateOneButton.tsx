@@ -1,9 +1,22 @@
+// import { Box, IconButton } from "@chakra-ui/react";
+// import { useTranslation } from "next-i18next";
+// import { formatToSignificant } from "utils/format";
+// import { BigNumber } from "ethers";
+// import { Popover, ResetIcon, TooltipText } from "uikit";
+// import { AuthorizedActionButton, AuthorizedActionButtonProps } from "components/Modals/SignInModal";
+
+
+
 import { Box, IconButton } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import { formatToSignificant } from "utils/format";
+import { formatToSignificant } from "../../utils/format";
 import { BigNumber } from "ethers";
-import { Popover, ResetIcon, TooltipText } from "uikit";
-import { AuthorizedActionButton, AuthorizedActionButtonProps } from "components/Modals/SignInModal";
+import Popover from "../../uikit/Popover/Popover";
+import { ResetIcon } from "../../uikit/Icons";
+import { TooltipText } from "../../uikit/Text/Text";
+import { AuthorizedActionButton, AuthorizedActionButtonProps } from "../Modals/SignInModal/AuthorizedActionButton";
+
+
 
 interface Props extends AuthorizedActionButtonProps {
   wethBalance: BigNumber;

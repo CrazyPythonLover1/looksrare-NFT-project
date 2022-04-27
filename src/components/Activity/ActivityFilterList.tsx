@@ -1,12 +1,22 @@
+// import { Flex, TagLabel, TagCloseButton } from "@chakra-ui/react";
+// import { useTranslation } from "react-i18next";
+// import { Button, Tag, Text } from "uikit";
+// import { useEventTypeLabels } from "hooks/useEventTypeLabels";
+// import { useActivityFilter } from "components/Filters";
+
+
+
 import { Flex, TagLabel, TagCloseButton } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { Button, Tag, Text } from "../../uikit";
-// import Button from "../../uikit/theme/components/Button";
-// import Tag from "../../uikit/theme/components/Tag";
-// import Text from "../../uikit/theme/components/Text";
+import { Button } from "../../uikit/Button/Button";
+import { Tag } from "../../uikit/Tag/Tag";
+import { Text } from "../../uikit/Text/Text";
 import { useEventTypeLabels } from "../../hooks/useEventTypeLabels";
-// import { useActivityFilter } from "components/Filters";
-import {useActivityFilter} from "../Filters/hooks/useActivityFilter"
+import { useActivityFilter } from "../Filters/hooks/useActivityFilter";
+
+
+
+
 
 interface ActivityFiltersProps {
   isMobileLayout?: boolean;

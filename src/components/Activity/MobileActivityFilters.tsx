@@ -1,6 +1,19 @@
+// import { Box, BoxProps, Divider } from "@chakra-ui/react";
+// import MobileFilterModal from "components/Modals/MobileFilterModal";
+// import { ActivityFilterList, ActivityFilters } from ".";
+
+
+
+
+
+
 import { Box, BoxProps, Divider } from "@chakra-ui/react";
-import MobileFilterModal from "components/Modals/MobileFilterModal";
-import { ActivityFilterList, ActivityFilters } from ".";
+import MobileFilterModal from "../Modals/MobileFilterModal";
+import {ActivityFilterList} from "./ActivityFilterList"
+import {ActivityFilters} from "./ActivityFilters"
+
+
+
 
 interface MobileActivityFiltersProps extends BoxProps {
   onFilterModalOpen(): void;

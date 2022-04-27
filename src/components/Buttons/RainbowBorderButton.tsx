@@ -1,5 +1,5 @@
 import { Flex, FlexProps } from "@chakra-ui/react";
-import { Button, ButtonProps } from "uikit";
+import { Button, ButtonProps } from "../../uikit/Button/Button";
 
 interface RainbowBorderButtonProps extends ButtonProps {
   boxProps?: FlexProps;

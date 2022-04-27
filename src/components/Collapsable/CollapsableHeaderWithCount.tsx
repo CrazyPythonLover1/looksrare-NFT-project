@@ -1,5 +1,13 @@
+// import { Flex, FlexProps, Skeleton, TextProps } from "@chakra-ui/react";
+// import { Text } from "uikit";
+
+
+
 import { Flex, FlexProps, Skeleton, TextProps } from "@chakra-ui/react";
-import { Text } from "uikit";
+import { Text } from "../../uikit/Text/Text";
+
+
+
 
 interface Props {
   isSuccess: boolean;
@@ -7,6 +15,7 @@ interface Props {
   countItems?: number;
   countProps?: TextProps;
   flexProps?: FlexProps;
+  children?: any;
 }
 
 export const CollapsableHeaderWithCount: React.FC<Props> = ({

@@ -1,5 +1,11 @@
+// import { ButtonProps, forwardRef } from "@chakra-ui/react";
+// import { Button } from "uikit";
+
+
+
 import { ButtonProps, forwardRef } from "@chakra-ui/react";
-import { Button } from "uikit";
+import { Button } from "../../uikit/Button/Button";
+
 
 interface Props extends ButtonProps {
   isActive?: boolean;

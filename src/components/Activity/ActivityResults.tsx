@@ -1,16 +1,39 @@
+// import React, { useEffect } from "react";
+// import { useTranslation } from "react-i18next";
+// import LazyLoad from "react-lazyload";
+// import { UseInfiniteQueryResult } from "react-query";
+// import { Flex, BoxProps } from "@chakra-ui/react";
+// import flatten from "lodash/flatten";
+// import { EVENTS_PER_PAGE } from "config";
+// import { SectionPlaceholder, Text } from "uikit";
+// import { Event } from "types/graphql";
+// import { ActivityRow } from "components/Activity";
+// import { Container } from "components/Layout/Container";
+// import useIntersectionObserver from "hooks/useIntersectionObserver";
+// import { ActivityLoadingPlaceholder, ActivityLoadingSkeleton } from "./ActivityLoadingSkeleton";
+
+
+
+
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import LazyLoad from "react-lazyload";
 import { UseInfiniteQueryResult } from "react-query";
 import { Flex, BoxProps } from "@chakra-ui/react";
 import flatten from "lodash/flatten";
-import { EVENTS_PER_PAGE } from "config";
-import { SectionPlaceholder, Text } from "uikit";
-import { Event } from "types/graphql";
-import { ActivityRow } from "components/Activity";
-import { Container } from "components/Layout/Container";
-import useIntersectionObserver from "hooks/useIntersectionObserver";
+import { EVENTS_PER_PAGE } from "../../config/constants";
+import { SectionPlaceholder } from "../../uikit/Placeholder/SectionPlaceholder";
+import Text from "../../uikit/theme/components/Text";
+import { Event } from "../../types/graphql";
+import { ActivityRow } from "./ActivityRow";
+import { Container } from "../Layout/Container";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import { ActivityLoadingPlaceholder, ActivityLoadingSkeleton } from "./ActivityLoadingSkeleton";
+
+
+
+
+
 
 export interface ActivityResultsProps extends BoxProps {
   eventResults: UseInfiniteQueryResult<Event[], any>;

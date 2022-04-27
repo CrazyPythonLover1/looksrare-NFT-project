@@ -1,9 +1,22 @@
+// import { Box, Flex } from "@chakra-ui/react";
+// import { flatten } from "lodash";
+// import { useTranslation } from "next-i18next";
+// import { Button, SectionLoader, SectionPlaceholder } from "uikit";
+// import { useCollectionRoyalties } from "hooks/graphql/royalties";
+// import { RoyaltyRow } from "./RoyaltyRow";
+
+
+
 import { Box, Flex } from "@chakra-ui/react";
 import { flatten } from "lodash";
 import { useTranslation } from "next-i18next";
-import { Button, SectionLoader, SectionPlaceholder } from "uikit";
-import { useCollectionRoyalties } from "hooks/graphql/royalties";
+import { Button } from "../../uikit/Button/Button";
+import { SectionLoader,  } from "../../uikit/Loader/SectionLoader";
+import { SectionPlaceholder } from "../../uikit/Placeholder/SectionPlaceholder";
+import { useCollectionRoyalties } from "../../hooks/graphql/royalties";
 import { RoyaltyRow } from "./RoyaltyRow";
+
+
 
 export interface PayoutsProps {
   collectionAddress: string;

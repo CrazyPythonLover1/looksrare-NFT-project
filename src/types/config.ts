@@ -4,3 +4,7 @@ export interface CurrencyConfig {
     decimals: number;
     name: string;
   }
+
+export interface TokenStandard {
+  
+}

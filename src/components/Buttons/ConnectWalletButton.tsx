@@ -1,9 +1,22 @@
+// import React from "react";
+// import { useDisclosure, IconButton, IconButtonProps } from "@chakra-ui/react";
+// import { useTranslation } from "react-i18next";
+// import { Button, ButtonProps, WarningFilledIcon, WalletIcon } from "uikit";
+// import { useIsSupportedNetwork } from "hooks/useIsSupportedNetwork";
+// import { ConnectWalletModal } from "../Modals/ConnectWalletModal/ConnectWalletModal";
+
+
+
 import React from "react";
 import { useDisclosure, IconButton, IconButtonProps } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { Button, ButtonProps, WarningFilledIcon, WalletIcon } from "uikit";
-import { useIsSupportedNetwork } from "hooks/useIsSupportedNetwork";
+// import { Button, ButtonProps, WarningFilledIcon, WalletIcon } from "uikit";
+import { Button, ButtonProps } from "../../uikit/Button/Button";
+import { WarningFilledIcon, WalletIcon } from "../../uikit/Icons";
+import { useIsSupportedNetwork } from "../../hooks/useIsSupportedNetwork";
 import { ConnectWalletModal } from "../Modals/ConnectWalletModal/ConnectWalletModal";
+
+
 
 export type ConnectWalletButtonProps = Omit<ButtonProps, "onClick" | "disabled">;
 

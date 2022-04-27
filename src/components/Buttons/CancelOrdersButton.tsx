@@ -3,12 +3,12 @@ import { BigNumber, BigNumberish } from "ethers";
 import { useTranslation } from "react-i18next";
 import { useWeb3React } from "@web3-react/core";
 import noop from "lodash/noop";
-import { Button, ButtonProps } from "uikit";
-import { getErrorMessage } from "utils/errors";
-import { cancelMultipleMakerOrders } from "utils/calls/exchange";
-import { useSubmitTransaction } from "hooks/useSubmitTransaction";
-import { useToast } from "hooks/useToast";
-import { ConnectWalletGuard } from "components/Layout/ConnectWalletGuard";
+import { Button, ButtonProps } from "../../uikit/Button/Button";
+import { getErrorMessage } from "../../utils/errors";
+import { cancelMultipleMakerOrders } from "../../utils/calls/exchange";
+import { useSubmitTransaction } from "../../hooks/useSubmitTransaction";
+import { useToast } from "../../hooks/useToast";
+import { ConnectWalletGuard } from "../Layout/ConnectWalletGuard";
 
 interface Props extends ButtonProps {
   nonces: BigNumberish[];
