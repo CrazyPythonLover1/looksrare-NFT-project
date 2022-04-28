@@ -80,7 +80,7 @@ import UserGroupIcon from "./components/UserGroup"
 import VerifiedIcon from "./components/Verified"
 import ViewOffIcon from "./components/ViewOff"
 import WalletIcon from "./components/Wallet"
-import WalletCollectionIcon from "./components/WalletConnect"
+import WalletConnectIcon from "./components/WalletConnect"
 import WarningIcon from "./components/Warning"
 import WarningFilledIcon from "./components/WarningFilled"
 import WethIcon from "./components/Weth"
@@ -98,5 +98,5 @@ export { AddAltIcon, ArrowHorizontalIcon, ArrowLeftIcon, ArrowRightIcon, Auction
     MailIcon, ManifoldCircleIcon, MaximizeIcon, MenuHorizontalIcon, MetaMaskIcon, MinimizeIcon, MintIcon, MisuseAltIcon, 
     MultipleIcon, OfferIcon, OpenSeaIcon, PersonDissatisfiedIcon, PlayFilledAltIcon, RaritySniperIcon, ResetIcon, 
     RestartIcon, SearchIcon, SendIcon, ShareIcon, ShoppingCartIcon, TelegramIcon, TwitterIcon, UserGroupIcon, 
-    VerifiedIcon, ViewOffIcon, WalletIcon, WalletCollectionIcon, WarningIcon, WarningFilledIcon, WethIcon, WethHalfIcon
+    VerifiedIcon, ViewOffIcon, WalletIcon, WalletConnectIcon, WarningIcon, WarningFilledIcon, WethIcon, WethHalfIcon
 }

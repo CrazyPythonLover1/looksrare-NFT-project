@@ -1,5 +1,17 @@
-import { Modal, ModalProps } from "uikit";
+// import { Modal, ModalProps } from "uikit/Modal/Modal";
+// import { ConfirmInWalletModalBody, ConfirmInWalletModalBodyProps } from "./ConfirmInWalletModalBody";
+
+
+
+
+import Modal from "../../../uikit/Modal/Modal";
+import { ModalProps } from "../../../uikit/Modal/Modal";
 import { ConfirmInWalletModalBody, ConfirmInWalletModalBodyProps } from "./ConfirmInWalletModalBody";
+
+
+
+
+
 
 export interface ConfirmInWalletModalProps extends ConfirmInWalletModalBodyProps {
   isOpen: ModalProps["isOpen"];

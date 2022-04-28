@@ -1,8 +1,23 @@
+// import { Fragment } from "react";
+// import { Divider, Flex, Spinner, Stack } from "@chakra-ui/react";
+// import uniqBy from "lodash/uniqBy";
+// import { useCollectionAttributes } from "hooks/graphql/collection";
+// import { AttributesFilter, useTokenFilter } from ".";
+
+
+
+
+
 import { Fragment } from "react";
 import { Divider, Flex, Spinner, Stack } from "@chakra-ui/react";
 import uniqBy from "lodash/uniqBy";
-import { useCollectionAttributes } from "hooks/graphql/collection";
-import { AttributesFilter, useTokenFilter } from ".";
+import { useCollectionAttributes } from "../../hooks/graphql/collection";
+import { AttributesFilter } from "./AttributesFilter";
+import { useTokenFilter } from "./hooks/useTokenFilter";
+
+
+
+
 
 interface Props {
   collectionAddress: string;

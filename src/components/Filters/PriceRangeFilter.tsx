@@ -1,10 +1,27 @@
+// import { useRef, useState } from "react";
+// import { useTranslation } from "react-i18next";
+// import debounce from "lodash/debounce";
+// import { Grid, Flex, GridItem } from "@chakra-ui/react";
+// import { EthIcon, NumberInput, Text } from "uikit";
+// import { parseInputToSafeDecimals } from "utils/guards";
+// import { BasicFilter } from "./BasicFilter";
+
+
+
+
+
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import debounce from "lodash/debounce";
 import { Grid, Flex, GridItem } from "@chakra-ui/react";
-import { EthIcon, NumberInput, Text } from "uikit";
-import { parseInputToSafeDecimals } from "utils/guards";
+import { EthIcon } from "../../uikit/Icons";
+import { NumberInput } from "../../uikit/Input/NumberInput";
+import { Text } from "../../uikit/Text/Text";
+import { parseInputToSafeDecimals } from "../../utils/guards";
 import { BasicFilter } from "./BasicFilter";
+
+
+
 
 interface PriceRangeFilterProps {
   onMinPriceChange: (value: string) => void;

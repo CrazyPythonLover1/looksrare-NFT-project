@@ -1,8 +1,24 @@
+// import { useRef } from "react";
+// import { Box, BoxProps, useOutsideClick, useBreakpointValue, Stack, Divider, Flex } from "@chakra-ui/react";
+// import { navHeightResponsive } from "uikit/theme/global";
+// import { useFilterLayout } from "./hooks";
+// import { FilterHeader, SIDEBAR_MAX_HEIGHT } from ".";
+
+
+
+
 import { useRef } from "react";
 import { Box, BoxProps, useOutsideClick, useBreakpointValue, Stack, Divider, Flex } from "@chakra-ui/react";
-import { navHeightResponsive } from "uikit/theme/global";
+import { navHeightResponsive } from "../../../uikit/theme/global";
 import { useFilterLayout } from "./hooks";
-import { FilterHeader, SIDEBAR_MAX_HEIGHT } from ".";
+// import { FilterHeader, SIDEBAR_MAX_HEIGHT } from ".";
+import {FilterHeader} from "./FilterHeader"
+import {SIDEBAR_MAX_HEIGHT} from "../../../components/Layout/FilterLayout/context"
+
+
+
+
+
 
 interface ButtonColumnOverlayProps {
   isCollapsed: boolean;

@@ -1,19 +1,55 @@
+// import { useEffect, useRef } from "react";
+// import { Box, Flex } from "@chakra-ui/react";
+// import { useIsSupportedNetwork } from "hooks/useIsSupportedNetwork";
+// import { useTranslation } from "react-i18next";
+// import { useWeb3React, UnsupportedChainIdError } from "@web3-react/core";
+// import {
+//   NoEthereumProviderError,
+//   UserRejectedRequestError as UserRejectedRequestErrorInjected,
+// } from "@web3-react/injected-connector";
+// import { useToast } from "hooks/useToast";
+// import { ModalBody, ModalProps, Text, WarningFilledIcon, Button } from "uikit";
+// import { LOCAL_STORAGE_EAGER_CONNECT, APP_CHAIN_ID, currentChainInfo } from "config";
+// import { useIsMetaMaskish } from "hooks/useIsMetaMaskish";
+// import { removeLocalStorageItem } from "utils/localStorage";
+// import { switchNetwork } from "utils/wallet";
+// import { MetaMaskWalletLink, WalletConnectWalletLink, CoinbaseWalletLink } from "./ConnectorLinks";
+
+
+
+
+
+
+
+
 import { useEffect, useRef } from "react";
 import { Box, Flex } from "@chakra-ui/react";
-import { useIsSupportedNetwork } from "hooks/useIsSupportedNetwork";
+import { useIsSupportedNetwork } from "../../../hooks/useIsSupportedNetwork";
 import { useTranslation } from "react-i18next";
 import { useWeb3React, UnsupportedChainIdError } from "@web3-react/core";
 import {
   NoEthereumProviderError,
   UserRejectedRequestError as UserRejectedRequestErrorInjected,
 } from "@web3-react/injected-connector";
-import { useToast } from "hooks/useToast";
-import { ModalBody, ModalProps, Text, WarningFilledIcon, Button } from "uikit";
-import { LOCAL_STORAGE_EAGER_CONNECT, APP_CHAIN_ID, currentChainInfo } from "config";
-import { useIsMetaMaskish } from "hooks/useIsMetaMaskish";
-import { removeLocalStorageItem } from "utils/localStorage";
-import { switchNetwork } from "utils/wallet";
+import { useToast } from "../../../hooks/useToast";
+import ModalBody from "../../../uikit/Modal/ModalBody";
+import { ModalProps } from "../../../uikit/Modal/Modal";
+import { Text } from "../../../uikit/Text/Text";
+import { WarningFilledIcon } from "../../../uikit/Icons";
+import { Button } from "../../../uikit/Button/Button";
+import { LOCAL_STORAGE_EAGER_CONNECT } from "../../../config/localStorage";
+import { APP_CHAIN_ID, currentChainInfo } from "../../../config/chains";
+import { useIsMetaMaskish } from "../../../hooks/useIsMetaMaskish";
+import { removeLocalStorageItem } from "../../../utils/localStorage";
+import { switchNetwork } from "../../../utils/wallet";
 import { MetaMaskWalletLink, WalletConnectWalletLink, CoinbaseWalletLink } from "./ConnectorLinks";
+
+
+
+
+
+
+
 
 export type ConnectWalletModalProps = Pick<ModalProps, "isOpen" | "onClose">;
 

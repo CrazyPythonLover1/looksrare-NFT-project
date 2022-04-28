@@ -1,7 +1,19 @@
+// import { Flex, TagLabel, TagCloseButton } from "@chakra-ui/react";
+// import { Button, Tag } from "uikit";
+// import { useTranslation } from "react-i18next";
+// import { useTokenFilter } from ".";
+
+
+
 import { Flex, TagLabel, TagCloseButton } from "@chakra-ui/react";
-import { Button, Tag } from "uikit";
+import { Button } from "../../uikit/Button/Button";
+import { Tag } from "../../uikit/Tag/Tag";
 import { useTranslation } from "react-i18next";
-import { useTokenFilter } from ".";
+import { useTokenFilter } from "./hooks/useTokenFilter";
+
+
+
+
 
 export const AttributesFilterTags: React.FC = () => {
   const { t } = useTranslation();

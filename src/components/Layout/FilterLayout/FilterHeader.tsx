@@ -1,7 +1,19 @@
+// import { useTranslation } from "react-i18next";
+// import { PropertyGroupHeader } from "components/Property";
+// import { ChevronLeft, FilterIcon } from "uikit";
+// import { useFilterLayout } from "./hooks";
+
+
+
 import { useTranslation } from "react-i18next";
-import { PropertyGroupHeader } from "components/Property";
-import { ChevronLeft, FilterIcon } from "uikit";
+import { PropertyGroupHeader } from "../../Property/PropertyGroupHeader";
+import ChevronLeft from "../../../uikit/Icons/components/ChevronLeft";
+import { FilterIcon } from "../../../uikit/Icons";
 import { useFilterLayout } from "./hooks";
+
+
+
+
 
 export const FilterHeader = () => {
   const { t } = useTranslation();

@@ -1,11 +1,29 @@
+// import { ReactNode } from "react";
+// import Link from "next/link";
+// import { useRouter } from "next/router";
+// import { Box, useColorModeValue } from "@chakra-ui/react";
+// import { useTranslation } from "next-i18next";
+// import { Button, Text } from "uikit";
+// import Page, { PageProps } from "../Page";
+// import { Container } from "../Container";
+
+
+
+
+
 import { ReactNode } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import { Button, Text } from "uikit";
+// import { Button, Text } from "uikit";
+import { Button } from "../../../uikit/Button/Button";
+import { Text } from "../../../uikit/Text/Text";
 import Page, { PageProps } from "../Page";
 import { Container } from "../Container";
+
+
+
 
 export interface HttpErrorProps extends PageProps {
   statusMessage?: string;

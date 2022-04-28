@@ -1,7 +1,21 @@
+// import { Box, Flex } from "@chakra-ui/layout";
+// import { FormLabel } from "@chakra-ui/form-control";
+// import { useTranslation } from "react-i18next";
+// import { Text, Switch } from "uikit";
+
+
+
+
 import { Box, Flex } from "@chakra-ui/layout";
 import { FormLabel } from "@chakra-ui/form-control";
 import { useTranslation } from "react-i18next";
-import { Text, Switch } from "uikit";
+import {Text} from "../../uikit/Text/Text";
+import Switch from "../../uikit/Switch/Switch"
+
+
+
+
+
 
 interface ListedItemsSwitchProps {
   isChecked?: boolean;

@@ -1,21 +1,52 @@
+// import { useState } from "react";
+// import { useTranslation } from "react-i18next";
+// import { useDisclosure, Fade, Box, GridItem, Collapse, Grid, Spinner, Flex } from "@chakra-ui/react";
+// import uniqueId from "lodash/uniqueId";
+// import flatten from "lodash/flatten";
+// import { ChevronDown, ChevronUp, ListIcon, CloseIcon, Button } from "uikit";
+// import { COLLECTIONS_PAGINATION_FIRST, useInfiniteCollectionsFilters } from "hooks/graphql/collections";
+// import { CollectionFilterItem, CollectionsSort } from "types/graphql";
+// import { formatToSignificant } from "utils/format";
+// import { useFilterLayout } from "components/Layout/FilterLayout/hooks";
+// import {
+//   CollectionPropertyButton,
+//   CollectionPropertyButtonLoadingPlaceholder,
+//   PropertyGroupHeader,
+// } from "components/Property";
+// import { PropertyHeader } from "components/Property";
+// import { AttributesFilterList } from "./AttributesFilterList";
+// import { useTokenFilter } from ".";
+
+
+
+
+
+
+
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useDisclosure, Fade, Box, GridItem, Collapse, Grid, Spinner, Flex } from "@chakra-ui/react";
 import uniqueId from "lodash/uniqueId";
 import flatten from "lodash/flatten";
-import { ChevronDown, ChevronUp, ListIcon, CloseIcon, Button } from "uikit";
-import { COLLECTIONS_PAGINATION_FIRST, useInfiniteCollectionsFilters } from "hooks/graphql/collections";
-import { CollectionFilterItem, CollectionsSort } from "types/graphql";
-import { formatToSignificant } from "utils/format";
-import { useFilterLayout } from "components/Layout/FilterLayout/hooks";
-import {
-  CollectionPropertyButton,
-  CollectionPropertyButtonLoadingPlaceholder,
-  PropertyGroupHeader,
-} from "components/Property";
-import { PropertyHeader } from "components/Property";
+// import { ChevronDown, ChevronUp, ListIcon, CloseIcon, Button } from "uikit";
+import ChevronDown from "../../uikit/Icons/components/ChevronDown";
+import ChevronUp from "../../uikit/Icons/components/ChevronUp";
+import { ListIcon, CloseIcon } from "../../uikit/Icons";
+import { Button } from "../../uikit/Button/Button";
+import { COLLECTIONS_PAGINATION_FIRST, useInfiniteCollectionsFilters } from "../../hooks/graphql/collections";
+import { CollectionFilterItem, CollectionsSort } from "../../types/graphql";
+import { formatToSignificant } from "../../utils/format";
+import { useFilterLayout } from "../Layout/FilterLayout/hooks";
+import { CollectionPropertyButton } from "../Property/PropertyButtons";
+import { CollectionPropertyButtonLoadingPlaceholder } from "../Property/PropertyButtonLoadingPlaceholders";
+import { PropertyGroupHeader } from "../Property/PropertyGroupHeader";
+import { PropertyHeader } from "../Property/styles";
 import { AttributesFilterList } from "./AttributesFilterList";
-import { useTokenFilter } from ".";
+import { useTokenFilter } from "./hooks/useTokenFilter";
+
+
+
+
 
 interface CollectionsFilterProps {
   handleSetCollectionAddress: (value: string) => void;

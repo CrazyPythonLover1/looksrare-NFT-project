@@ -1,14 +1,33 @@
+// import React, { useEffect } from "react";
+// import { useWeb3React } from "@web3-react/core";
+// import { Box, useDisclosure } from "@chakra-ui/react";
+// import { getLocalStorageItem, setLocalStorageItem } from "utils/localStorage";
+// import { useQueryClientListener } from "hooks/useQueryClientListener";
+// import { navHeightResponsive } from "uikit/theme/global";
+// import { OnboardingModal } from "components/Modals/OnboardingModal";
+// import ErrorBoundary from "components/ErrorBoundary";
+// import { LOCAL_STORAGE_HAS_ALREADY_SOLD } from "config";
+// import { Nav, NavProps } from "../Nav";
+// import Footer from "../Nav/Footer";
+
+
+
+
 import React, { useEffect } from "react";
 import { useWeb3React } from "@web3-react/core";
 import { Box, useDisclosure } from "@chakra-ui/react";
-import { getLocalStorageItem, setLocalStorageItem } from "utils/localStorage";
-import { useQueryClientListener } from "hooks/useQueryClientListener";
-import { navHeightResponsive } from "uikit/theme/global";
-import { OnboardingModal } from "components/Modals/OnboardingModal";
-import ErrorBoundary from "components/ErrorBoundary";
-import { LOCAL_STORAGE_HAS_ALREADY_SOLD } from "config";
+import { getLocalStorageItem, setLocalStorageItem } from "../../utils/localStorage";
+import { useQueryClientListener } from "../../hooks/useQueryClientListener";
+import { navHeightResponsive } from "../../uikit/theme/global";
+import { OnboardingModal } from "../Modals/OnboardingModal";
+import ErrorBoundary from "../ErrorBoundary";
+import { LOCAL_STORAGE_HAS_ALREADY_SOLD } from "../../config/localStorage";
 import { Nav, NavProps } from "../Nav";
 import Footer from "../Nav/Footer";
+
+
+
+
 
 export interface PageProps {
   navProps?: NavProps;

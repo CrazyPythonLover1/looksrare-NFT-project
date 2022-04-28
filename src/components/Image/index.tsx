@@ -1,8 +1,20 @@
+// import { getCloudinaryUrl, Format, Quality } from "@looksrare/shared";
+// import { useState, ReactEventHandler } from "react";
+// import NextImage, { ImageProps as NextImageProps } from "next/image";
+// import { TOKEN_IMAGE_PLACEHOLDER_URI, currentChainInfo } from "config";
+// import { nextImageLoader, ImageLoaderProps } from "utils/mediaLoaders/nextImage";
+
+
+
 import { getCloudinaryUrl, Format, Quality } from "@looksrare/shared";
 import { useState, ReactEventHandler } from "react";
 import NextImage, { ImageProps as NextImageProps } from "next/image";
-import { TOKEN_IMAGE_PLACEHOLDER_URI, currentChainInfo } from "config";
-import { nextImageLoader, ImageLoaderProps } from "utils/mediaLoaders/nextImage";
+import { TOKEN_IMAGE_PLACEHOLDER_URI } from "../../config/urls";
+import { currentChainInfo } from "../../config/chains";
+import { nextImageLoader, ImageLoaderProps } from "../../utils/mediaLoaders/nextImage";
+
+
+
 
 /**
  * Construct Cloudinary URL for resources delivered by our CDN.

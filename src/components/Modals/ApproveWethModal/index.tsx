@@ -1,7 +1,20 @@
+// import { ReactNode } from "react";
+// import { useTranslation } from "react-i18next";
+// import { Modal, ModalProps } from "uikit";
+// import ApproveWethModalBody from "./ApproveWethModalBody";
+
+
+
+
 import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
-import { Modal, ModalProps } from "uikit";
+import Modal from "../../../uikit/Modal/Modal";
+import { ModalProps } from "../../../uikit/Modal/Modal";
 import ApproveWethModalBody from "./ApproveWethModalBody";
+
+
+
+
 
 interface Props {
   isOpen: ModalProps["isOpen"];

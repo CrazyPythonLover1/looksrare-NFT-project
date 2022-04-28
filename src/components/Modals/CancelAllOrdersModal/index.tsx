@@ -1,4 +1,4 @@
-import { Modal } from "uikit";
+import  Modal  from "../../../uikit/Modal/Modal";
 import { CancelAllOrders, CancelAllOrdersProps } from "./CancelAllOrders";
 
 interface CancelAllOrdersModalProps extends CancelAllOrdersProps {

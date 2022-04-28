@@ -1,6 +1,18 @@
+// import { useTranslation } from "react-i18next";
+// import { Modal, ModalProps } from "uikit";
+// import { ConnectWalletModalBody } from "./ConnectWalletModalBody";
+
+
+
+
 import { useTranslation } from "react-i18next";
-import { Modal, ModalProps } from "uikit";
+import Modal from "../../../uikit/Modal/Modal";
+import { ModalProps } from "../../../uikit/Modal/Modal";
 import { ConnectWalletModalBody } from "./ConnectWalletModalBody";
+
+
+
+
 
 export type ConnectWalletModalProps = Pick<ModalProps, "isOpen" | "onClose">;
 

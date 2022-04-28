@@ -1,14 +1,32 @@
+// import React, { useState, ReactNode } from "react";
+// import { useWeb3React } from "@web3-react/core";
+// import { TransactionReceipt } from "@ethersproject/abstract-provider";
+// import { useTranslation } from "react-i18next";
+// import { ModalBody } from "uikit";
+// import { addresses } from "config";
+// import { approve } from "utils/calls/erc20";
+// import { TransactionStep } from "../Orders/shared";
+// import { useSubmitTransaction } from "hooks/useSubmitTransaction";
+// import { getErrorMessage } from "utils/errors";
+// import { useToast } from "hooks/useToast";
+
+
+
+
 import React, { useState, ReactNode } from "react";
 import { useWeb3React } from "@web3-react/core";
 import { TransactionReceipt } from "@ethersproject/abstract-provider";
 import { useTranslation } from "react-i18next";
-import { ModalBody } from "uikit";
-import { addresses } from "config";
-import { approve } from "utils/calls/erc20";
+import ModalBody from "../../../uikit/Modal/ModalBody";
+import { addresses } from "../../../config/addresses";
+import { approve } from "../../../utils/calls/erc20";
 import { TransactionStep } from "../Orders/shared";
-import { useSubmitTransaction } from "hooks/useSubmitTransaction";
-import { getErrorMessage } from "utils/errors";
-import { useToast } from "hooks/useToast";
+import { useSubmitTransaction } from "../../../hooks/useSubmitTransaction";
+import { getErrorMessage } from "../../../utils/errors";
+import { useToast } from "../../../hooks/useToast";
+
+
+
 
 interface Props {
   onConfirm: (transaction: string) => void;

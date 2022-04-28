@@ -1,17 +1,44 @@
+// import { useState } from "react";
+// import { useTranslation } from "react-i18next";
+// import { useWeb3React } from "@web3-react/core";
+// import { Divider, Box, IconButton, useBoolean, useDisclosure } from "@chakra-ui/react";
+// import { ModalBody, Modal, ModalFooterGrid, Button, DoubleArrowIcon, Text } from "uikit";
+// import { useEthBalance } from "hooks/useEthBalance";
+// import { useInvalidateTokenBalance, useWethBalance } from "hooks/useTokenBalance";
+// import { useSubmitTransaction } from "hooks/useSubmitTransaction";
+// import { useToast } from "hooks/useToast";
+// import { deposit, withdraw } from "utils/calls/weth";
+// import { getErrorMessage } from "utils/errors";
+// import { toDecimals, fromDecimals } from "utils/format";
+// import { ConfirmInWalletModal } from "../ConfirmInWalletModal";
+// import { CurrencyInput } from "../Orders/shared";
+
+
+
+
+
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useWeb3React } from "@web3-react/core";
 import { Divider, Box, IconButton, useBoolean, useDisclosure } from "@chakra-ui/react";
-import { ModalBody, Modal, ModalFooterGrid, Button, DoubleArrowIcon, Text } from "uikit";
-import { useEthBalance } from "hooks/useEthBalance";
-import { useInvalidateTokenBalance, useWethBalance } from "hooks/useTokenBalance";
-import { useSubmitTransaction } from "hooks/useSubmitTransaction";
-import { useToast } from "hooks/useToast";
-import { deposit, withdraw } from "utils/calls/weth";
-import { getErrorMessage } from "utils/errors";
-import { toDecimals, fromDecimals } from "utils/format";
-import { ConfirmInWalletModal } from "../ConfirmInWalletModal";
+import ModalBody from "../../../uikit/Modal/ModalBody";
+import Modal from "../../../uikit/Modal/Modal";
+import { ModalFooterGrid } from "../../../uikit/Modal/ModalFooterGrid";
+import { Button } from "../../../uikit/Button/Button";
+import { DoubleArrowIcon } from "../../../uikit/Icons";
+import { Text } from "../../../uikit/Text/Text";
+import { useEthBalance } from "../../../hooks/useEthBalance";
+import { useInvalidateTokenBalance, useWethBalance } from "../../../hooks/useTokenBalance";
+import { useSubmitTransaction } from "../../../hooks/useSubmitTransaction";
+import { useToast } from "../../../hooks/useToast";
+import { deposit, withdraw } from "../../../utils/calls/weth";
+import { getErrorMessage } from "../../../utils/errors";
+import { toDecimals, fromDecimals } from "../../../utils/format";
+import { ConfirmInWalletModal } from "../ConfirmInWalletModal/ConfirmInWalletModal";
 import { CurrencyInput } from "../Orders/shared";
+
+
+
 
 interface ModalWrapperProps {
   isOpen: boolean;
