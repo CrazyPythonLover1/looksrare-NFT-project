@@ -7,11 +7,11 @@ import { APP_CHAIN_ID, COLLECTIONS_TO_FETCH_FOR_HOME } from "config";
 import { headers } from "config/server";
 import { CollectionsParams, getCollectionsBase } from "utils/graphql";
 import { CollectionBase, CollectionsSort, TokenFlag, TokensSort } from "types/graphql";
-import useLocalStorageSnooze from "hooks/useLocalStorageSnooze";
-import { useTokens } from "hooks/graphql/tokens";
-import { useEagerConnect } from "hooks/useEagerConnect";
-import HomeView from "views/home";
-import { ListingRewardBanner } from "views/rewards/components/ListingRewards";
+import useLocalStorageSnooze from "../hooks/useLocalStorageSnooze";
+import { useTokens } from "../hooks/graphql/tokens";
+import { useEagerConnect } from "../hooks/useEagerConnect";
+import HomeView from "../views/home";
+import { ListingRewardBanner } from "../views/rewards/components/ListingRewards";
 import Page from "components/Layout/Page";
 
 interface Props {

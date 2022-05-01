@@ -39,7 +39,7 @@ import {
   ArrowHorizontalIcon,
   MisuseAltIcon,
   ViewOffIcon,
-} from "../../uikit/Icons/index";
+} from "../../uikit/index";
 import { Text } from "../../uikit/Text/Text";
 import { Tag, TagProps } from "../../uikit/Tag/Tag";
 import { formatToSignificant } from "../../utils/format";

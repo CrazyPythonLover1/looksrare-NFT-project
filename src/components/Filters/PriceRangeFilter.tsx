@@ -14,7 +14,7 @@ import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import debounce from "lodash/debounce";
 import { Grid, Flex, GridItem } from "@chakra-ui/react";
-import { EthIcon } from "../../uikit/Icons";
+import { EthIcon } from "../../uikit";
 import { NumberInput } from "../../uikit/Input/NumberInput";
 import { Text } from "../../uikit/Text/Text";
 import { parseInputToSafeDecimals } from "../../utils/guards";

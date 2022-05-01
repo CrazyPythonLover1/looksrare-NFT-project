@@ -13,7 +13,7 @@ import { useDisclosure } from "@chakra-ui/hooks";
 import { GridProps, Collapse, Fade, Grid, Box } from "@chakra-ui/react";
 import ChevronDown from "../../uikit/Icons/components/ChevronDown";
 import ChevronUp from "../../uikit/Icons/components/ChevronUp";
-import { ListIcon } from "../../uikit/Icons";
+import { ListIcon } from "../../uikit";
 import { useFilterLayout } from "../Layout/FilterLayout/hooks";
 import { PropertyGroupHeader } from "../Property/PropertyGroupHeader";
 

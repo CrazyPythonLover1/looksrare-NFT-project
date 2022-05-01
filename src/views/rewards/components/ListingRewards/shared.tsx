@@ -2,12 +2,12 @@ import { Box, Flex, FlexProps, Grid, GridItem, Skeleton } from "@chakra-ui/react
 import { BigNumber } from "ethers";
 import Link from "next/link";
 import { Trans } from "next-i18next";
-import { EthHalfIcon, HelpIcon, LogoPolygonIcon, Text, VerifiedIcon } from "uikit";
-import { Avatar } from "components/Avatar";
-import { useOsCollectionImages } from "views/collections/components/hooks/useOsCollectionImages";
-import { CollectionLeaderboard } from "utils/graphql";
-import { useCoinPrices } from "hooks/useCoinPrices";
-import { formatNumberToLocale, formatToSignificant, fromDecimals } from "utils/format";
+import { EthHalfIcon, HelpIcon, LogoPolygonIcon, Text, VerifiedIcon } from "../../../../uikit";
+import { Avatar } from "../../../../components/Avatar";
+import { useOsCollectionImages } from "../../../../views/collections/components/hooks/useOsCollectionImages";
+import { CollectionLeaderboard } from "../../../../utils/graphql/collection";
+import { useCoinPrices } from "../../../../hooks/useCoinPrices";
+import { formatNumberToLocale, formatToSignificant, fromDecimals } from "../../../../utils/format";
 
 interface CollectionAmountDisplayProps {
   label: string;
@@ -38,7 +38,7 @@ const ListingRewardDisplay = ({ points, ...props }: ListingRewardDisplayProps) =
     <Flex alignItems="center" {...props}>
       <LogoPolygonIcon color="purple.400" boxSize={4} mr={1} />
       <Text as="span" textStyle="detail" mr={1}>
-        {{ points }}
+        {/* {{ points }} */}
       </Text>
       <Text as="span" textStyle="helper" color="text-03">
         per listing

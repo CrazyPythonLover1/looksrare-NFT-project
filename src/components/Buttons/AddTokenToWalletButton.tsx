@@ -11,7 +11,7 @@
 import { CHAIN_INFO } from "@looksrare/sdk";
 import { useTranslation } from "react-i18next";
 import { ButtonProps } from "../../uikit/Button/Button";
-import { AddAltIcon } from "../../uikit/Icons";
+import { AddAltIcon } from "../../uikit";
 import { addTokenToWallet } from "../../utils/wallet";
 import { addresses } from "../../config/addresses";
 import { TextButton } from "./TextButton";

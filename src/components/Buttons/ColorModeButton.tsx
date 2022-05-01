@@ -7,7 +7,7 @@
 import { IconButton, useColorMode } from "@chakra-ui/react";
 // import { ButtonProps, LightFilledIcon, LightIcon } from "uikit";
 import { ButtonProps } from "../../uikit/Button/Button";
-import { LightFilledIcon, LightIcon } from "../../uikit/Icons";
+import { LightFilledIcon, LightIcon } from "../../uikit";
 
 
 

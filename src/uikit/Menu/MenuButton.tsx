@@ -4,7 +4,7 @@ import {
   MenuButtonProps as ChakraMenuButtonProps,
   MenuButton as ChakraMenuButton,
 } from "@chakra-ui/react";
-import { ChevronDown, ChevronUp } from "../Icons";
+import { ChevronDown, ChevronUp } from "..";
 
 interface MenuButtonProps extends ChakraMenuButtonProps {
   isOpen: boolean;

@@ -35,7 +35,7 @@ import { useToast } from "../../../hooks/useToast";
 import ModalBody from "../../../uikit/Modal/ModalBody";
 import { ModalProps } from "../../../uikit/Modal/Modal";
 import { Text } from "../../../uikit/Text/Text";
-import { WarningFilledIcon } from "../../../uikit/Icons";
+import { WarningFilledIcon } from "../../../uikit";
 import { Button } from "../../../uikit/Button/Button";
 import { LOCAL_STORAGE_EAGER_CONNECT } from "../../../config/localStorage";
 import { APP_CHAIN_ID, currentChainInfo } from "../../../config/chains";

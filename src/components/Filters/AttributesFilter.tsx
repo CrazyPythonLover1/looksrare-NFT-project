@@ -22,7 +22,7 @@ import capitalize from "lodash/capitalize";
 import findIndex from "lodash/findIndex";
 import ChevronDown from "../../uikit/Icons/components/ChevronDown";
 import ChevronUp from "../../uikit/Icons/components/ChevronUp";
-import { ListIcon, HelpIcon } from "../../uikit/Icons";
+import { ListIcon, HelpIcon } from "../../uikit";
 import { Button } from "../../uikit/Button/Button";
 import Popover from "../../uikit/Popover/Popover";
 import { TooltipText } from "../../uikit/Text/Text";

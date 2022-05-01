@@ -9,7 +9,7 @@ import { IconButton, Menu, MenuButton, MenuList, MenuItem, useClipboard } from "
 import { useTranslation } from "react-i18next";
 import { ButtonProps } from "../../uikit/Button/Button";
 import { IconProps } from "../../uikit/Icons/Icon";
-import { ShareIcon } from "../../uikit/Icons";
+import { ShareIcon } from "../../uikit";
 import { currentChainInfo } from "../../config/chains";
 
 

@@ -5,7 +5,7 @@
 
 import { useTranslation } from "react-i18next";
 import { ButtonProps } from "../../uikit/Button/Button";
-import { EtherscanIcon } from "../../uikit/Icons";
+import { EtherscanIcon } from "../../uikit";
 import Popover from "../../uikit/Popover/Popover";
 import { TooltipText } from "../../uikit/Text/Text";
 import { IconProps } from "../../uikit/Icons/Icon";

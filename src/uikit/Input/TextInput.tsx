@@ -7,7 +7,7 @@ import {
   InputLeftElement as ChakraInputLeftElement,
 } from "@chakra-ui/input";
 import { Input } from "./Input";
-import { SearchIcon, CloseIcon } from "../Icons";
+import { SearchIcon, CloseIcon } from "..";
 import { IconButton } from "@chakra-ui/button";
 
 interface TextInputProps extends InputProps {

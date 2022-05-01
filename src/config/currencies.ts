@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { EthHalfIcon, WethHalfIcon } from "../uikit/Icons";
+import { EthHalfIcon, WethHalfIcon } from "../uikit";
 import { IconProps } from "../uikit/Icons/Icon";
 import { CurrencyConfig, Currency } from "../types/config";
 import { isAddressEqual } from "utils/guards";

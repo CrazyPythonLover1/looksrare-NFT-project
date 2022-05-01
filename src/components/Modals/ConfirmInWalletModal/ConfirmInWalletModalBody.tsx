@@ -16,7 +16,7 @@ import { ReactNode } from "react";
 import { Box, Flex, Spinner, Divider } from "@chakra-ui/react";
 import { TransactionResponse } from "@ethersproject/abstract-provider";
 import { useTranslation } from "react-i18next";
-import { CheckmarkOutlineIcon, MisuseAltIcon } from "../../../uikit/Icons";
+import { CheckmarkOutlineIcon, MisuseAltIcon } from "../../../uikit";
 import ModalBody from "../../../uikit/Modal/ModalBody";
 import { ModalProps } from "../../../uikit/Modal/Modal";
 import { Text } from "../../../uikit/Text/Text";

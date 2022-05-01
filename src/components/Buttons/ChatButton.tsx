@@ -10,7 +10,7 @@ import React from "react";
 import { IconButton } from "@chakra-ui/react";
 import ButtonProps from "../../uikit/theme/components/Button";
 import { Link } from "../../uikit/Link/Link";
-import { MailIcon } from "../../uikit/Icons";
+import { MailIcon } from "../../uikit";
 import { Button } from "../../uikit/Button/Button";
 import { TooltipText } from "../../uikit/Text/Text";
 import Popover from "../../uikit/Popover/Popover";

@@ -31,7 +31,7 @@ import flatten from "lodash/flatten";
 // import { ChevronDown, ChevronUp, ListIcon, CloseIcon, Button } from "uikit";
 import ChevronDown from "../../uikit/Icons/components/ChevronDown";
 import ChevronUp from "../../uikit/Icons/components/ChevronUp";
-import { ListIcon, CloseIcon } from "../../uikit/Icons";
+import { ListIcon, CloseIcon } from "../../uikit";
 import { Button } from "../../uikit/Button/Button";
 import { COLLECTIONS_PAGINATION_FIRST, useInfiniteCollectionsFilters } from "../../hooks/graphql/collections";
 import { CollectionFilterItem, CollectionsSort } from "../../types/graphql";

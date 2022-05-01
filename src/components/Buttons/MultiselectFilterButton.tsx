@@ -9,7 +9,7 @@ import { Flex, IconButton, Slide } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 // import { Button, FilterIcon, ShoppingCartIcon } from "uikit";
 import { Button } from "../../uikit/Button/Button";
-import { FilterIcon, ShoppingCartIcon } from "../../uikit/Icons";
+import { FilterIcon, ShoppingCartIcon } from "../../uikit";
 import { FILTER_LAYOUT_MOBILE_BUTTON_Z_INDEX } from "../Layout/FilterLayout/context";
 
 

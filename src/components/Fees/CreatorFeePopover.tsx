@@ -7,7 +7,7 @@
 
 import { Flex, FlexProps, Spinner } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import { InformationIcon } from "../../uikit/Icons";
+import { InformationIcon } from "../../uikit";
 import Popover from "../../uikit/Popover/Popover";
 import { Text, TooltipText } from "../../uikit/Text/Text";
 import { formatNumberToLocale } from "../../utils/format";

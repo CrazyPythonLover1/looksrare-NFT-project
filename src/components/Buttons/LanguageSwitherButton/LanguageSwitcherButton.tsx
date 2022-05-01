@@ -10,7 +10,7 @@ import { MenuItem, MenuList, MenuButton, useBreakpointValue, IconButton, Flex } 
 import { useRouter } from "next/router";
 import { languageList } from "../../../config/localization";
 import { Button, ButtonProps } from "../../../uikit/Button/Button";
-import { GlobeIcon } from "../../../uikit/Icons";
+import { GlobeIcon } from "../../../uikit";
 import { Menu } from "../../../uikit/Menu/Menu";
 
 

@@ -17,7 +17,7 @@ import { Box, Flex, FlexProps } from "@chakra-ui/layout";
 import { useColorModeValue } from "@chakra-ui/react";
 import { useWeb3React } from "@web3-react/core";
 import ChevronRight from "../../../uikit/Icons/components/ChevronRight";
-import { MetaMaskIcon, CoinbaseIcon, CoinbaseLightIcon, WalletConnectIcon } from "../../../uikit/Icons";
+import { MetaMaskIcon, CoinbaseIcon, CoinbaseLightIcon, WalletConnectIcon } from "../../../uikit";
 import { Text } from "../../../uikit/Text/Text";
 import { injected, walletconnect, walletlink } from "../../../utils/connectors";
 import { LOCAL_STORAGE_EAGER_CONNECT, EagerConnect } from "../../../config/localStorage";

@@ -21,7 +21,7 @@ import { Instance } from "flatpickr/dist/types/instance";
 import minMaxTimePlugin from "flatpickr/dist/plugins/minMaxTimePlugin";
 import { useDurationLabels, DurationOption } from "../../hooks/useDurationLabels";
 import { DropdownMenu } from "../DropdownMenu/DropdownMenu";
-import { CalenderIcon, CloseIcon } from "../../uikit/Icons";
+import { CalenderIcon, CloseIcon } from "../../uikit";
 import { formatTimestampAsDateString } from "../../utils/format";
 import { CustomDateDisplay } from "./CustomDateDisplay";
 

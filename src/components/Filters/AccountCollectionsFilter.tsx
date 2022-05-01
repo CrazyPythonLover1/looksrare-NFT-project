@@ -30,7 +30,7 @@ import uniqueId from "lodash/uniqueId";
 import flatten from "lodash/flatten";
 import ChevronDown from "../../uikit/Icons/components/ChevronDown";
 import ChevronUp from "../../uikit/Icons/components/ChevronUp";
-import { ListIcon, CloseIcon } from "../../uikit/Icons";
+import { ListIcon, CloseIcon } from "../../uikit";
 import { Button } from "../../uikit/Button/Button";
 import { COLLECTIONS_PAGINATION_FIRST } from "../../hooks/graphql/collections";
 import { useRelativeCollectionsSortLabels } from "../../hooks/useRelativeCollectionsSortLabels";

@@ -25,7 +25,7 @@ import ModalBody from "../../../uikit/Modal/ModalBody";
 import Modal from "../../../uikit/Modal/Modal";
 import { ModalFooterGrid } from "../../../uikit/Modal/ModalFooterGrid";
 import { Button } from "../../../uikit/Button/Button";
-import { DoubleArrowIcon } from "../../../uikit/Icons";
+import { DoubleArrowIcon } from "../../../uikit";
 import { Text } from "../../../uikit/Text/Text";
 import { useEthBalance } from "../../../hooks/useEthBalance";
 import { useInvalidateTokenBalance, useWethBalance } from "../../../hooks/useTokenBalance";

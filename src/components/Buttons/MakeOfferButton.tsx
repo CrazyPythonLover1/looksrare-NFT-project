@@ -14,7 +14,7 @@ import { useTranslation } from "react-i18next";
 import { useDisclosure } from "@chakra-ui/react";
 import { Button, ButtonProps } from "../../uikit/Button/Button";
 import { ImageData } from "../../types/graphql";
-import { MakerOrderWithSignatureAndHash } from "../../types/orders";
+import { MakerOrderWithSignatureAndHash } from "../../types/orders.ts";
 import CreateStandardBidModal from "../Modals/Orders/CreateStandardBidModal";
 
 

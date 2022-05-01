@@ -10,7 +10,7 @@
 import { Flex, FlexProps } from "@chakra-ui/react";
 import { BigNumber } from "ethers";
 import { useTranslation } from "next-i18next";
-import { InformationIcon } from "../../uikit/Icons";
+import { InformationIcon } from "../../uikit";
 import Popover from "../../uikit/Popover/Popover";
 import { Text, TooltipText } from "../../uikit/Text/Text";
 import { formatFees } from "../../utils/format";

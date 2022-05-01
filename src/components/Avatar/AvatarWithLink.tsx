@@ -18,7 +18,7 @@ import { formatAddressUsername } from "../../utils/format";
 import { isAddressEqual } from "../../utils/guards";
 import Popover from "../../uikit/Popover/Popover";
 import { RainbowText, RainbowTextProps, Text } from "../../uikit/Text/Text";
-import { VerifiedIcon } from "../../uikit/Icons";
+import { VerifiedIcon } from "../../uikit";
 import { Avatar, AvatarProps } from "./Avatar";
 
 

@@ -7,7 +7,7 @@
 import Link from "next/link";
 // import { Text, TextProps, VerifiedIcon } from "uikit";
 import { Text, TextProps } from "../../uikit/Text/Text";
-import { VerifiedIcon } from "../../uikit/Icons";
+import { VerifiedIcon } from "../../uikit";
 import { TextButton } from "./TextButton";
 
 
