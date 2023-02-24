@@ -2,8 +2,8 @@ import { MouseEventHandler } from "react";
 import NextLink from "next/link";
 import { Box, GridItem, IconButton } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import { Container } from "components/Layout/Container";
-import { CloseIcon, Link, LogoPolygonIcon, Text } from "uikit";
+import { Container } from "../../../../components/Layout/Container";
+import { CloseIcon, Link, LogoPolygonIcon, Text } from "../../../../uikit";
 
 interface ListingRewardBannerProps {
   onDismiss: () => void;

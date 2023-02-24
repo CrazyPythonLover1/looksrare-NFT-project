@@ -1,4 +1,4 @@
-import { EagerConnectContext } from "contexts";
+import { EagerConnectContext } from "../contexts/EagerConnect";
 import { useContext } from "react";
 
 export const useEagerConnect = () => {

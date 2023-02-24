@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Flex, IconButton, useDisclosure } from "@chakra-ui/react";
 import { useHotkeys } from "react-hotkeys-hook";
-import { Button, SearchIcon, Text } from "uikit";
+import { Button, SearchIcon, Text } from "../../uikit";
 import SearchModal from "./SearchModal";
 
 export const DesktopSearchButton = () => {

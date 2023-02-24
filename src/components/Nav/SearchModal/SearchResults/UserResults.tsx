@@ -4,10 +4,10 @@ import { connectStateResults } from "react-instantsearch-dom";
 import { StateResultsProvided } from "react-instantsearch-core";
 import { Flex, Divider, useBreakpointValue, Stack, Box } from "@chakra-ui/react";
 import uniqueId from "lodash/uniqueId";
-import { ChevronDown, Text } from "uikit";
-import { formatHits } from "utils/algolia";
-import { useSetUserProfilesFromSearchHits } from "hooks/useUserProfileDisplay";
-import { TextButton } from "components/Buttons";
+import { ChevronDown, Text } from "../../../../uikit";
+import { formatHits } from "../../../../utils/algolia";
+import { useSetUserProfilesFromSearchHits } from "../../../../hooks/useUserProfileDisplay";
+import { TextButton } from "../../../Buttons/TextButton";
 import UserHit, { UserHitPlaceholder, UserHitProps } from "./UserHit";
 
 export const USER_HITS_FETCH_PER_PAGE = { base: 4, sm: 10 };

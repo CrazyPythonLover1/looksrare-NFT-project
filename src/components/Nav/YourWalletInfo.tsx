@@ -2,15 +2,16 @@ import { Box, Flex, BoxProps, Skeleton } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { constants } from "ethers";
 import NextLink from "next/link";
-import { Button, EthIcon, LogoIcon, Text, WethIcon } from "uikit";
-import { formatToSignificant } from "utils/format";
-import { useEthBalance } from "hooks/useEthBalance";
-import { useUserEns } from "hooks/useUserProfileDisplay";
-import { useLooksBalance, useWethBalance } from "hooks/useTokenBalance";
-import { useCalculatePendingUserRewards } from "hooks/calls/useFeeSharingSystem";
-import { useGetTradingListingRewards } from "hooks/useGetTradingListingRewards";
-import { CopyAddress } from "components/CopyAddress";
-import { ConvertEthButton } from "components/Buttons";
+import { Button, EthIcon, LogoIcon, Text, WethIcon } from "../../uikit";
+import { formatToSignificant } from "../../utils/format";
+import { useEthBalance } from "../../hooks/useEthBalance";
+import { useUserEns } from "../../hooks/useUserProfileDisplay";
+import { useLooksBalance, useWethBalance } from "../../hooks/useTokenBalance";
+// @ts-ignore
+import { useCalculatePendingUserRewards } from "../../hooks/calls/useFeeSharingSystem";
+import { useGetTradingListingRewards } from "../../hooks/useGetTradingListingRewards";
+import { CopyAddress } from "../CopyAddress/CopyAddress";
+import { ConvertEthButton } from "../Buttons/ConvertEthButton";
 
 export interface YourWalletInfoProps extends BoxProps {
   isOpen: boolean;

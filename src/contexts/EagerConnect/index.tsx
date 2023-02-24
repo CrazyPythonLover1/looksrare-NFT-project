@@ -1,8 +1,8 @@
 import { createContext, useEffect, useState } from "react";
 import { useWeb3React } from "@web3-react/core";
-import { LOCAL_STORAGE_EAGER_CONNECT, EagerConnect } from "config";
-import { injected, walletconnect, walletlink } from "utils/connectors";
-import { getLocalStorageItem } from "utils/localStorage";
+import { LOCAL_STORAGE_EAGER_CONNECT, EagerConnect } from "../../config/localStorage";
+import { injected, walletconnect, walletlink } from "../../utils/connectors";
+import { getLocalStorageItem } from "../../utils/localStorage";
 
 export const EagerConnectContext = createContext<boolean>(false);
 

@@ -4,12 +4,12 @@ import Link from "next/link";
 import { connectHitInsights } from "react-instantsearch-dom";
 import { ConnectHitInsightsProvided } from "react-instantsearch-core";
 import SearchInsights from "search-insights";
-import { Text, VerifiedIcon } from "uikit";
-import { ALGOLIA_TOKENS_INDEX } from "config/algolia";
-import { APP_CHAIN_ID } from "config";
-import { AlgoliaEventNames } from "hooks/useSendAlgoliaEvent";
-import { useOsCollectionImages } from "views/collections/components/hooks/useOsCollectionImages";
-import { Avatar } from "components/Avatar";
+import { Text, VerifiedIcon } from "../../../../uikit";
+import { ALGOLIA_TOKENS_INDEX } from "../../../../config/algolia";
+import { APP_CHAIN_ID } from "../../../../config/chains";
+import { AlgoliaEventNames } from "../../../../hooks/useSendAlgoliaEvent";
+import { useOsCollectionImages } from "../../../../views/collections/components/hooks/useOsCollectionImages";
+import { Avatar } from "../../../../components/Avatar";
 
 export type CollectionHitProps = {
   name: string;

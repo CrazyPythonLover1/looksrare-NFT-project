@@ -22,20 +22,20 @@ import {
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import {
-  Badge,
-  ChevronDown,
-  ChevronUp,
+  // Badge,
+  // ChevronDown,
+  // ChevronUp,
   CloseIcon,
   CollectionIcon,
   CompassIcon,
   GiftIcon,
   HamburgerIcon,
-  RainbowText,
-  StaticLogoLarge,
-  StaticLogoLargeLight,
-} from "uikit";
-import { Menu } from "uikit/Menu";
-import { LanguageSwitcherButtons } from "components/Buttons";
+  // RainbowText,
+  // StaticLogoLarge,
+  // StaticLogoLargeLight,
+} from "../../uikit";
+import { Menu } from "../../uikit/Menu/Menu";
+import { LanguageSwitcherButtons } from "../Buttons/LanguageSwitherButton/LanguageSwitcherButton";
 import { DesktopNextLink, MobileLink, MobileNextLink } from "./shared";
 
 export const LinkList: React.FC<FlexProps> = (props) => {
@@ -44,8 +44,8 @@ export const LinkList: React.FC<FlexProps> = (props) => {
   const isRewardActive = pathname.startsWith("/rewards");
   return (
     <Flex {...props}>
-      <DesktopNextLink href="/explore">{t("Explore")}</DesktopNextLink>
-      <DesktopNextLink href="/collections">{t("Collections")}</DesktopNextLink>
+      {/* <DesktopNextLink href="/explore">{t("Explore")}</DesktopNextLink>
+      <DesktopNextLink href="/collections">{t("Collections")}</DesktopNextLink> */}
       <Menu placement="bottom-end">
         <MenuButton
           as={Link}
@@ -59,9 +59,9 @@ export const LinkList: React.FC<FlexProps> = (props) => {
           sx={{ _hover: { bg: "ui-01" } }}
           color="text-02"
         >
-          <RainbowText as="span" animate>
+          {/* <RainbowText as="span" animate>
             {t("Rewards")}
-          </RainbowText>
+          </RainbowText> */}
         </MenuButton>
         <MenuList zIndex="dropdown">
           <NextLink href="/rewards" passHref>
@@ -70,9 +70,9 @@ export const LinkList: React.FC<FlexProps> = (props) => {
           <NextLink href="/rewards/trading" passHref>
             <MenuItem as="a" display="flex" justifyContent="space-between">
               {t("Listing & Trading")}
-              <Badge textTransform="uppercase" bg="support-error-inverse" color="white">
+              {/* <Badge textTransform="uppercase" bg="support-error-inverse" color="white">
                 {t("New")}
-              </Badge>
+              </Badge> */}
             </MenuItem>
           </NextLink>
         </MenuList>
@@ -85,10 +85,10 @@ export const MobileDrawer = () => {
   const { t } = useTranslation();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const rewardDisclosure = useDisclosure();
-  const logoWithText = useColorModeValue(
-    <StaticLogoLargeLight width="130" height="40" />,
-    <StaticLogoLarge width="130" height="40" />
-  );
+  // const logoWithText = useColorModeValue(
+  //   <StaticLogoLargeLight width="130" height="40" />,
+  //   <StaticLogoLarge width="130" height="40" />
+  // );
 
   return (
     <>
@@ -100,7 +100,7 @@ export const MobileDrawer = () => {
         <DrawerContent>
           <Flex alignItems="center" justifyContent="space-between" pr={4}>
             <DrawerHeader flex="0" display="flex" alignItems="end" tabIndex={1} px={4}>
-              <Box w="130px">{logoWithText}</Box>
+              {/* <Box w="130px">{logoWithText}</Box> */}
             </DrawerHeader>
             <IconButton aria-label="close menu" variant="ghost" size="xs" color="text-01" onClick={onClose}>
               <CloseIcon />
@@ -111,10 +111,10 @@ export const MobileDrawer = () => {
           </Box>
           <DrawerBody display="flex" flexDirection="column" bgColor="ui-01" px={0}>
             <Stack spacing={0} divider={<Divider />}>
-              <MobileNextLink href="/explore" leftIcon={CompassIcon}>
+              {/* <MobileNextLink href="/explore" leftIcon={CompassIcon}>
                 {t("Explore")}
-              </MobileNextLink>
-              <MobileNextLink href="/collections" leftIcon={CollectionIcon}>
+              </MobileNextLink> */}
+              {/* <MobileNextLink href="/collections" leftIcon={CollectionIcon}>
                 {t("Collections")}
               </MobileNextLink>
               <MobileLink
@@ -125,10 +125,10 @@ export const MobileDrawer = () => {
                 userSelect="none"
               >
                 {t("Rewards")}
-              </MobileLink>
+              </MobileLink> */}
               {rewardDisclosure.isOpen && (
                 <>
-                  <MobileNextLink href="/rewards" pl="52px">
+                  {/* <MobileNextLink href="/rewards" pl="52px">
                     {t("Staking")}
                   </MobileNextLink>
                   <MobileNextLink
@@ -141,7 +141,7 @@ export const MobileDrawer = () => {
                     }
                   >
                     {t("Listing & Trading")}
-                  </MobileNextLink>
+                  </MobileNextLink> */}
                 </>
               )}
             </Stack>

@@ -4,7 +4,6 @@ import { useTranslation, Trans } from "react-i18next";
 import {
   Link,
   Modal,
-  ModalProps,
   ModalFooterGrid,
   ModalBody,
   Button,
@@ -18,8 +17,10 @@ import {
   EthIcon,
   DoubleArrowIcon,
   TooltipText,
-} from "uikit";
-import { LooksLogoBanner } from "components/Svg/LooksLogoBanner";
+} from "../../../uikit";
+import { ModalProps } from "../../../uikit/Modal/Modal"
+
+import { LooksLogoBanner } from "../../Svg/LooksLogoBanner";
 
 const baseFlexHeaderProps = {
   maxWidth: "360px",

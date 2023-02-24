@@ -1,11 +1,12 @@
 import algoliasearch from "algoliasearch";
 import { Configure, InstantSearch as AlgoliaInstantSearch } from "react-instantsearch-dom";
 import { MultipleQueriesQuery } from "@algolia/client-search";
-import { APP_CHAIN_ID } from "config";
-import { ALGOLIA_COLLECTIONS_INDEX } from "config/algolia";
+import { APP_CHAIN_ID } from "../config/chains";
+import { ALGOLIA_COLLECTIONS_INDEX } from "../config/algolia";
 
-const algoliaClient = algoliasearch(process.env.ALGOLIA_APP_ID, process.env.ALGOLIA_SEARCH_API_KEY);
+const algoliaClient = algoliasearch(process.env.ALGOLIA_APP_ID || "", process.env.ALGOLIA_SEARCH_API_KEY || "");
 
+// @ts-ignore
 const AlgoliaSearchClient: React.FC = ({ children }) => {
   /**
    * Custom search resolver to prevent searches when the request query is an empty string

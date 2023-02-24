@@ -1,9 +1,11 @@
 import { Box, Flex } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { ModalBody, Button } from "uikit";
+import { ModalBody, Button } from "../../../uikit";
 import SearchInput from "./SearchInput";
 import SearchResults from "./SearchResults";
-import AlgoliaSearchClient from "components/AlgoliaSearchClient";
+// import AlgoliaSearchClient from "components/AlgoliaSearchClient";
+import AlgoliaSearchClient from "../../AlgoliaSearchClient";
+
 
 type Props = {
   onClose: () => void;
@@ -12,6 +14,7 @@ type Props = {
 const InstantSearch = ({ onClose }: Props) => {
   const { t } = useTranslation();
   return (
+    // @ts-ignore
     <AlgoliaSearchClient>
       <Flex bg={{ base: "ui-bg", md: "transparent" }} pl={4} py={{ base: 3 }}>
         <Flex flex="1">

@@ -1,6 +1,6 @@
 import { Component, ReactNode } from "react";
 import { datadogRum } from "@datadog/browser-rum";
-import { ApplicationError } from "./Layout/Errors";
+import { ApplicationError } from "./Layout/Errors/ApplicationError";
 
 interface ErrorBoundaryState {
   hasError: boolean;

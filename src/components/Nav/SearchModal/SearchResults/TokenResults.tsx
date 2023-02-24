@@ -4,9 +4,9 @@ import { connectStateResults } from "react-instantsearch-dom";
 import { StateResultsProvided } from "react-instantsearch-core";
 import { Flex, Divider, useBreakpointValue, Box, Stack } from "@chakra-ui/react";
 import uniqueId from "lodash/uniqueId";
-import { ChevronDown, Text } from "uikit";
-import { formatHits } from "utils/algolia";
-import { TextButton } from "components/Buttons";
+import { ChevronDown, Text } from "../../../../uikit";
+import { formatHits } from "../../../../utils/algolia";
+import { TextButton } from "../../../Buttons/TextButton";
 import TokenHit, { TokenHitPlaceholder, TokenHitProps } from "./TokenHit";
 
 export const TOKEN_HITS_FETCH_PER_PAGE = { base: 4, sm: 10 };

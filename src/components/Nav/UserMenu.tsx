@@ -11,11 +11,11 @@ import {
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import NextLink from "next/link";
-import { useUser } from "hooks/graphql/user";
-import { ChevronRight, Button, DownloadIcon } from "uikit";
-import StaleOrdersActionBar from "views/account/components/StaleOrdersActionBar";
-import { Avatar, AvatarWithUsername } from "components/Avatar";
-import { DisconnectWalletButton } from "components/Buttons";
+import { useUser } from "../../hooks/graphql/user";
+import { ChevronRightIcon, Button, DownloadIcon } from "../../uikit";
+import StaleOrdersActionBar from "../../views/account/components/StaleOrdersActionBar";
+import { Avatar, AvatarWithUsername } from "../../components/Avatar";
+import { DisconnectWalletButton } from "../Buttons/DisconnectWalletButton";
 import { AccountLink } from "./AccountLink";
 import { YourWalletInfo } from "./YourWalletInfo";
 
@@ -65,11 +65,11 @@ const UserMenu = ({ account }: UserMenuProps) => {
                     textProps={{ textStyle: "display-body" }}
                     flex={1}
                   />
-                  <ChevronRight />
+                  <ChevronRightIcon />
                 </Flex>
               </NextLink>
               <StaleOrdersActionBar account={account} isNarrow forceVisible />
-              <AccountLink uikitLinkProps={sharedLinkProps} path={accountsPath} hash="#owned">
+              {/* <AccountLink uikitLinkProps={sharedLinkProps} path={accountsPath} hash="#owned">
                 {t("My Items")}
               </AccountLink>
               <AccountLink uikitLinkProps={sharedLinkProps} path={accountsPath} hash="#activity">
@@ -80,7 +80,7 @@ const UserMenu = ({ account }: UserMenuProps) => {
               </AccountLink>
               <AccountLink uikitLinkProps={sharedLinkProps} path={accountsPath} hash="#collections">
                 {t("My Collections")}
-              </AccountLink>
+              </AccountLink> */}
               <NextLink href="/accounts/import" passHref>
                 <Button as="a" square onClick={onClose} rightIcon={<DownloadIcon />} width="100%">
                   {t("Import Listings")}

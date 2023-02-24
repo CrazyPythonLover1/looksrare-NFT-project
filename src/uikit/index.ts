@@ -14,7 +14,8 @@ import CheckboxOutlineIcon from "./Icons/components/CheckboxOutline"
 import CheckmarkIcon from "./Icons/components/Checkmark"
 import CheckmarkFilled from "./Icons/components/CheckmarkFilled"
 import CheckmarkOutlineIcon from "./Icons/components/CheckmarkOutline"
-import ChevronDownIcon from "./Icons/components/ChevronDown"
+import ChevronDownIcon from "./Icons/components/ChevronDown" 
+import ChevronDown from "./Icons/components/ChevronDown" 
 import ChevronLeftIcon from "./Icons/components/ChevronLeft"
 import ChevronRightIcon from "./Icons/components/ChevronRight"
 import ChevronUpIcon from "./Icons/components/ChevronUp"
@@ -86,11 +87,20 @@ import WarningFilledIcon from "./Icons/components/WarningFilled"
 import WethIcon from "./Icons/components/Weth"
 import WethHalfIcon from "./Icons/components/WethHalf"
 import { Text } from "./Text/Text"
+import { Link } from "./Link/Link"
+import Modal from "./Modal/Modal"
+
+import { ModalFooterGrid } from "./Modal/ModalFooterGrid"
+import ModalBody from "./Modal/ModalBody"
+import { Button } from "./Button/Button"
+import Popover from "./Popover/Popover"
+import Checkbox from "./Checkbox/Checkbox"
+import { TooltipText } from "./Text/Text"
 
 export {
     AddAltIcon, ArrowHorizontalIcon, ArrowLeftIcon, ArrowRightIcon, AuctionIcon,
     BackToTop, BigLooksIcon, BigLooksLightIcon, BlogIcon, CalenderIcon, CheckboxCheckFilledIcon,
-    CheckboxOutlineIcon, CheckmarkIcon, CheckmarkFilled, CheckmarkOutlineIcon, ChevronDownIcon, ChevronLeftIcon,
+    CheckboxOutlineIcon, CheckmarkIcon, CheckmarkFilled, CheckmarkOutlineIcon, ChevronDownIcon, ChevronDown, ChevronLeftIcon,
     ChevronRightIcon, ChevronUpIcon, ClockIcon, CloseIcon, CoinbaseIcon, CoinbaseLightIcon, CollectionIcon,
     CompassIcon, CopyFileIcon, DeleteIcon, DiamondIcon, DiscordIcon, DoubleArrowIcon, DownloadIcon, ErrorIcon,
     ErrorFilledIcon, EthIcon, FilterIcon, FormattingIcon, GiftIcon, GlobeIcon, HamburgerIcon, HelpIcon, InformationFilledIcon,
@@ -99,5 +109,12 @@ export {
     MailIcon, ManifoldCircleIcon, MaximizeIcon, MenuHorizontalIcon, MetaMaskIcon, MinimizeIcon, MintIcon, MisuseAltIcon,
     MultipleIcon, OfferIcon, OpenSeaIcon, PersonDissatisfiedIcon, PlayFilledAltIcon, RaritySniperIcon, ResetIcon,
     RestartIcon, SearchIcon, SendIcon, ShareIcon, ShoppingCartIcon, TelegramIcon, TwitterIcon, UserGroupIcon,
-    VerifiedIcon, ViewOffIcon, WalletIcon, WalletConnectIcon, WarningIcon, WarningFilledIcon, WethIcon, WethHalfIcon, Text
+    VerifiedIcon, ViewOffIcon, WalletIcon, WalletConnectIcon, WarningIcon, WarningFilledIcon, WethIcon, WethHalfIcon, Text, Link,
+    Modal,
+ModalFooterGrid,
+ModalBody,
+Button,
+Popover,
+Checkbox,
+TooltipText,
 }

@@ -3,16 +3,17 @@ import orderBy from "lodash/orderBy";
 import { GetStaticProps } from "next";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { APP_CHAIN_ID, COLLECTIONS_TO_FETCH_FOR_HOME } from "config";
-import { headers } from "config/server";
-import { CollectionsParams, getCollectionsBase } from "utils/graphql";
-import { CollectionBase, CollectionsSort, TokenFlag, TokensSort } from "types/graphql";
+import { APP_CHAIN_ID } from "../config/chains";
+import { COLLECTIONS_TO_FETCH_FOR_HOME } from "../config/constants";
+// import { headers } from "../config/server";
+import { CollectionsParams, getCollectionsBase } from "../utils/graphql/collection";
+import { CollectionBase, CollectionsSort, TokenFlag, TokensSort } from "../types/graphql";
 import useLocalStorageSnooze from "../hooks/useLocalStorageSnooze";
 import { useTokens } from "../hooks/graphql/tokens";
 import { useEagerConnect } from "../hooks/useEagerConnect";
 import HomeView from "../views/home";
-import { ListingRewardBanner } from "../views/rewards/components/ListingRewards";
-import Page from "components/Layout/Page";
+import { ListingRewardBanner } from "../views/rewards/components/ListingRewards/ListingRewardBanner";
+import Page from "../components/Layout/Page";
 
 interface Props {
   topCollections: CollectionBase[];
@@ -38,6 +39,7 @@ const Home: React.FC<Props> = ({ topCollections }) => {
   });
 
   return (
+    // @ts-ignore
     <Page>
       <NextSeo
         title={t("LooksRare - NFT Marketplace")}
@@ -58,7 +60,8 @@ const COLLECTIONS_PARAMS: CollectionsParams = {
 };
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const topCollections = await getCollectionsBase(COLLECTIONS_PARAMS, headers);
+  // const topCollections = await getCollectionsBase(COLLECTIONS_PARAMS, headers);
+  const topCollections:any = [];
 
   try {
     return {

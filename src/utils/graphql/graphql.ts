@@ -1,5 +1,5 @@
 import request from "graphql-request";
-import { currentChainInfo } from "config";
+import { currentChainInfo } from "../../config/chains";
 
 /**
  * General wrapper around requests to the api & subgraph to centralize error handling

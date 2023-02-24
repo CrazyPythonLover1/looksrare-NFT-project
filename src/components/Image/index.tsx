@@ -5,8 +5,8 @@
 // import { nextImageLoader, ImageLoaderProps } from "utils/mediaLoaders/nextImage";
 
 
-
-import { getCloudinaryUrl, Format, Quality } from "@looksrare/shared";
+// @ts-ignore
+// import { getCloudinaryUrl, Format, Quality } from "@looksrare/shared";
 import { useState, ReactEventHandler } from "react";
 import NextImage, { ImageProps as NextImageProps } from "next/image";
 import { TOKEN_IMAGE_PLACEHOLDER_URI } from "../../config/urls";
@@ -21,29 +21,31 @@ import { nextImageLoader, ImageLoaderProps } from "../../utils/mediaLoaders/next
  * For other resources - Use Next Image default CDN.
  * @returns string
  */
-const loader = (imageLoaderProps: ImageLoaderProps, format?: Format, contentType?: string) => {
-  if (currentChainInfo.cdnUrl && imageLoaderProps.src.startsWith(currentChainInfo.cdnUrl)) {
-    const { quality, width, src } = imageLoaderProps;
-    const relativeSrc = src.replace(currentChainInfo.cdnUrl, "");
-    return getCloudinaryUrl({
-      src: relativeSrc,
-      baseCloudinaryUrl: currentChainInfo.cloudinaryUrl,
-      quality,
-      width,
-      format,
-      contentType,
-      resourceType: "image",
-    });
-  }
+// const loader = (imageLoaderProps: ImageLoaderProps, format?: Format, contentType?: string) => {
+//   if (currentChainInfo.cdnUrl && imageLoaderProps.src.startsWith(currentChainInfo.cdnUrl)) {
+//     const { quality, width, src } = imageLoaderProps;
+//     const relativeSrc = src.replace(currentChainInfo.cdnUrl, "");
+//     return getCloudinaryUrl({
+//       src: relativeSrc,
+//       baseCloudinaryUrl: currentChainInfo.cloudinaryUrl,
+//       quality,
+//       width,
+//       format,
+//       contentType,
+//       resourceType: "image",
+//     });
+//   }
 
-  return nextImageLoader(imageLoaderProps);
-};
+//   return nextImageLoader(imageLoaderProps);
+// };
 
 export interface ImageProps extends Omit<NextImageProps, "quality"> {
-  format?: Format;
+  // format?: Format;
+  format?: any;
   contentType?: string;
   placeholderSrc?: string;
-  quality?: Quality;
+  // quality?: Quality;
+  quality?: string;
 }
 
 export const Image = ({
@@ -69,7 +71,7 @@ export const Image = ({
     <NextImage
       src={isImageError ? placeholderSrc : src}
       onError={handleError}
-      loader={(resolverProps) => loader({ ...resolverProps, quality }, format, contentType)}
+      // loader={(resolverProps) => loader({ ...resolverProps, quality }, format, contentType)}
       {...props}
     />
   );

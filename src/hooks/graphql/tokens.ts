@@ -1,4 +1,5 @@
-import { baseQueryKeys, ORDERS_PER_PAGE, TOKENS_PER_PAGE, TOKENS_WITH_BIDS_PER_PAGE } from "config";
+import { baseQueryKeys } from "../../config/reactQueries";
+import { ORDERS_PER_PAGE, TOKENS_PER_PAGE, TOKENS_WITH_BIDS_PER_PAGE } from "../../config/constants";
 import last from "lodash/last";
 import { useCallback } from "react";
 import { useInfiniteQuery, UseInfiniteQueryOptions, useQuery, useQueryClient, UseQueryOptions } from "react-query";
@@ -12,8 +13,8 @@ import {
   TokenOwner,
   TokenOwnerFilter,
   TokensSort,
-} from "types/graphql";
-import { MakerOrderWithSignatureAndHash } from "types/orders";
+} from "../../types/graphql";
+import { MakerOrderWithSignatureAndHash } from "../../types/orders";
 import {
   getTokens,
   getTokenBids,
@@ -22,9 +23,9 @@ import {
   getTokenOwners,
   GetTokenOwnersParams,
   getUserTokens,
-} from "utils/graphql";
-import getTokenOrders from "utils/graphql/getTokenOrders";
-import { getTokensWithBids, NFTWithBids, TokensWithBidsParams } from "utils/graphql/getTokensWithBids";
+} from "../../utils/graphql/graphql";
+import getTokenOrders from "../../utils/graphql/getTokenOrders";
+import { getTokensWithBids, NFTWithBids, TokensWithBidsParams } from "../../utils/graphql/getTokensWithBids";
 
 export const tokenKeys = {
   ...baseQueryKeys("tokens"),

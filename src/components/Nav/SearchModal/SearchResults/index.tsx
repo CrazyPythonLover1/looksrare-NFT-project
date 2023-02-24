@@ -2,9 +2,10 @@ import { Flex, Stack, useBreakpointValue } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { Index, Configure, connectStateResults } from "react-instantsearch-dom";
 import { StateResultsProvided } from "react-instantsearch-core";
-import { ALGOLIA_COLLECTIONS_INDEX, ALGOLIA_TOKENS_INDEX, ALGOLIA_USERS_INDEX } from "config/algolia";
-import { APP_CHAIN_ID } from "config";
-import { SectionPlaceholder, Text } from "uikit";
+import { ALGOLIA_COLLECTIONS_INDEX, ALGOLIA_TOKENS_INDEX, ALGOLIA_USERS_INDEX } from "../../../../config/algolia";
+import { APP_CHAIN_ID } from "../../../../config/chains";
+// import { SectionPlaceholder, Text } from "../../../../uikit";
+import { Text } from "../../../../uikit";
 import TokenResults, { TOKEN_HITS_FETCH_PER_PAGE } from "./TokenResults";
 import CollectionResults, { COLLECTION_HITS_FETCH_PER_PAGE } from "./CollectionResults";
 import UserResults, { USER_HITS_FETCH_PER_PAGE } from "./UserResults";
@@ -47,11 +48,11 @@ const SearchResults: React.FC<Props> = ({ onClose, searchState, isSearchStalled,
         </Text>
       ) : (
         <>
-          {noHits && (
+          {/* {noHits && (
             <SectionPlaceholder py={16}>
               <Text bold>{t("No results found")}</Text>
             </SectionPlaceholder>
-          )}
+          )} */}
           <Stack spacing={0}>
             <Index indexName={ALGOLIA_COLLECTIONS_INDEX[APP_CHAIN_ID]}>
               <Configure hitsPerPage={numCollectionsToFetch} />
