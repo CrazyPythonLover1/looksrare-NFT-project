@@ -1,6 +1,6 @@
 import { BigNumber, BigNumberish, constants } from "ethers";
 import { useTranslation } from "react-i18next";
-import { LOW_FLOOR_THRESHOLD, HIGH_FLOOR_THRESHOLD } from "config";
+import { LOW_FLOOR_THRESHOLD, HIGH_FLOOR_THRESHOLD } from "config/constants";
 import { fromDecimals } from "utils/format";
 import { CollectionFloor } from "types/graphql";
 

@@ -1,7 +1,7 @@
 import { Box, Flex, FlexProps } from "@chakra-ui/react";
 import { Text, VerifiedIcon } from "uikit";
 import { ImageData } from "types/graphql";
-import { TOKEN_IMAGE_PLACEHOLDER_URI } from "config";
+import { TOKEN_IMAGE_PLACEHOLDER_URI } from "config/urls";
 import { useOsCollectionImages } from "views/collections/components/hooks/useOsCollectionImages";
 import { Image } from "components/Image";
 

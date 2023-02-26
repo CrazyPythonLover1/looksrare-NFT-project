@@ -1,9 +1,9 @@
 import { ReactElement } from "react";
-import { EthHalfIcon, WethHalfIcon } from "../uikit";
-import { IconProps } from "../uikit/Icons/Icon";
-import { CurrencyConfig, Currency } from "../types/config";
+import { EthHalfIcon, WethHalfIcon } from "uikit";
+import { IconProps } from "uikit/Icons/Icon";
+import { CurrencyConfig, Currency } from "types/config";
 import { isAddressEqual } from "utils/guards";
-import { addresses, ETH_ADDRESS } from ".";
+import { addresses, ETH_ADDRESS } from "./addresses";
 
 const WETH: CurrencyConfig = {
   symbol: "WETH",
@@ -20,10 +20,11 @@ const ETH: CurrencyConfig = {
 };
 
 const currenciesMapByAddress: { [address: string]: CurrencyConfig } = {
-  [addresses.WETH]: WETH,
+  [addresses?.WETH]: WETH,
   [ETH_ADDRESS]: ETH,
 };
 
+// @ts-ignore
 export const currenciesMapBySymbol: Record<Currency, CurrencyConfig> = {
   WETH,
   ETH,

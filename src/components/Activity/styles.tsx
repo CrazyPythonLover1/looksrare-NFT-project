@@ -39,15 +39,15 @@ import {
   ArrowHorizontalIcon,
   MisuseAltIcon,
   ViewOffIcon,
-} from "../../uikit/index";
-import { Text } from "../../uikit/Text/Text";
-import { Tag, TagProps } from "../../uikit/Tag/Tag";
-import { formatToSignificant } from "../../utils/format";
-import { isAddressEqual } from "../../utils/guards";
-import { STRATEGIES_ADDRESS } from "../../config/addresses";
-import { getCurrencyConfig } from "../../config/currencies";
-import { useUserProfileDisplay } from "../../hooks/useUserProfileDisplay";
-import { EventType, EventOrder } from "../../types/graphql";
+} from "uikit/index";
+import { Text } from "uikit/Text/Text";
+import { Tag, TagProps } from "uikit/Tag/Tag";
+import { formatToSignificant } from "utils/format";
+import { isAddressEqual } from "utils/guards";
+import { STRATEGIES_ADDRESS } from "config/addresses";
+import { getCurrencyConfig } from "config/currencies";
+import { useUserProfileDisplay } from "hooks/useUserProfileDisplay";
+import { EventType, EventOrder } from "types/graphql";
 import { AvatarWithLink } from "../Avatar/AvatarWithLink";
 
 

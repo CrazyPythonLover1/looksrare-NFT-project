@@ -8,7 +8,7 @@ import { Text, SectionPlaceholder } from "uikit";
 import { TOKENS_WITH_BIDS_PER_PAGE } from "config";
 import NftOfferCollapsable from "components/OrderRows/NftOfferCollapsable";
 import NftOfferCardLoadingSkeleton from "components/OrderRows/NftOfferCardLoadingSkeleton";
-import { useUserTokensWithBids } from "../hooks/useUserTokensWithBids";
+import { useUserTokensWithBids } from "hooks/useUserTokensWithBids";
 
 interface Props {
   address: string;

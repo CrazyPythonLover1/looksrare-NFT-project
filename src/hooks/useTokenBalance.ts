@@ -3,7 +3,8 @@ import { useWeb3React } from "@web3-react/core";
 import { BigNumber } from "ethers";
 import { useQuery, useQueryClient, UseQueryOptions } from "react-query";
 import { balanceOf } from "utils/calls/erc20";
-import { addresses, CONTRACT_BALANCE_INTERVAL } from "config";
+import { addresses } from "config/addresses";
+import { CONTRACT_BALANCE_INTERVAL } from "config/constants"
 
 type TokenBalanceQueryOptions = UseQueryOptions<BigNumber, any, BigNumber>;
 

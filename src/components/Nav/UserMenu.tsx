@@ -11,10 +11,10 @@ import {
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import NextLink from "next/link";
-import { useUser } from "../../hooks/graphql/user";
-import { ChevronRightIcon, Button, DownloadIcon } from "../../uikit";
-import StaleOrdersActionBar from "../../views/account/components/StaleOrdersActionBar";
-import { Avatar, AvatarWithUsername } from "../../components/Avatar";
+import { useUser } from "hooks/graphql/user";
+import { ChevronRightIcon, Button, DownloadIcon } from "uikit";
+import StaleOrdersActionBar from "views/account/components/StaleOrdersActionBar";
+import { Avatar, AvatarWithUsername } from "components/Avatar";
 import { DisconnectWalletButton } from "../Buttons/DisconnectWalletButton";
 import { AccountLink } from "./AccountLink";
 import { YourWalletInfo } from "./YourWalletInfo";

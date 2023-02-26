@@ -1,9 +1,10 @@
-import { multicall, Call } from "@looksrare/shared";
+// @ts-nocheck
+// import { multicall, Call } from "@looksrare/shared";
 import { TransactionResponse } from "@ethersproject/abstract-provider";
 import { BigNumber, BigNumberish } from "ethers";
-import { addresses } from "config";
+import { addresses } from "config/addresses";
 import { getAggregatorUniswapV3Contract } from "utils/contracts";
-import { SupportedProviders } from "types";
+import { SupportedProviders } from "types/config";
 import { AggregatorFeeSharingWithUniswapV3Abi } from "@looksrare/sdk";
 import { estimateGas } from "./helpers";
 

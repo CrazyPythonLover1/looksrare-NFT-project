@@ -1,5 +1,6 @@
 import Cookies from "js-cookie";
-import { APP_CHAIN_ID, JWT_COOKIE } from "config";
+import { APP_CHAIN_ID } from "config/chains";
+import { JWT_COOKIE } from "config/constants";
 
 export const getAuthCookie = (address: string): string | undefined =>
   Cookies.get(`${JWT_COOKIE}${address}_${APP_CHAIN_ID}`);

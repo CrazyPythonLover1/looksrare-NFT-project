@@ -1,7 +1,7 @@
 import { BigNumber, BigNumberish } from "ethers";
 import { getFeeSharingSystemContract } from "utils/contracts";
 import { TransactionResponse } from "@ethersproject/abstract-provider";
-import { SupportedProviders } from "types";
+import { SupportedProviders } from "types/config";
 
 const FEE_SHARING_GAS_LIMIT = "300000";
 const FEE_SHARING_HARVEST_GAS_LIMIT = "240000";

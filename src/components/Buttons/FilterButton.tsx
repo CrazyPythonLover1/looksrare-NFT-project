@@ -7,8 +7,8 @@
 
 import { Flex, Slide } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { Button } from "../../uikit/Button/Button";
-import { FilterIcon } from "../../uikit";
+import { Button } from "uikit/Button/Button";
+import { FilterIcon } from "uikit";
 import { FILTER_LAYOUT_MOBILE_BUTTON_Z_INDEX } from "../Layout/FilterLayout/context";
 
 

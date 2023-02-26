@@ -1,6 +1,7 @@
 import last from "lodash/last";
 import { useInfiniteQuery, UseInfiniteQueryOptions } from "react-query";
-import { baseQueryKeys, EVENTS_PER_PAGE } from "config";
+import { baseQueryKeys } from "config/reactQueries";
+import { EVENTS_PER_PAGE } from "config/constants"
 import { Event, EventFilter } from "types/graphql";
 import { getEvents, getUserEvents } from "utils/graphql/events";
 import { useSetUserProfilesFromEvents } from "hooks/useUserProfileDisplay";

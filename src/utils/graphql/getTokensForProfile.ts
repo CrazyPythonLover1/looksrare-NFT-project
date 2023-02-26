@@ -1,5 +1,5 @@
 import { request, gql } from "graphql-request";
-import { currentChainInfo } from "config";
+import { currentChainInfo } from "config/chains";
 import { NFTAvatar, Pagination, TokenFilter, ImageData } from "types/graphql";
 
 type Response = {

@@ -6,7 +6,7 @@
 
 import NextLink, { LinkProps } from "next/link";
 import { TextButton } from "../Buttons/TextButton";
-import { ButtonProps } from "../../uikit/Button/Button";
+import { ButtonProps } from "uikit/Button/Button";
 
 
 

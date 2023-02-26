@@ -10,9 +10,9 @@
 
 
 import { useBreakpointValue } from "@chakra-ui/react";
-import { COLLECTIONS_PAGINATION_FIRST } from "../../hooks/graphql/collections";
+import { COLLECTIONS_PAGINATION_FIRST } from "hooks/graphql/collections";
 import times from "lodash/times";
-import { CollectionBase } from "../../types/graphql";
+import { CollectionBase } from "types/graphql";
 import { CollectionRow } from "./CollectionRow";
 import { MobileCollectionDisplay } from "./MobileCollectionDisplay";
 import { CollectionHeaderRow, CollectionRowSkeleton, MobileCollectionDisplaySkeleton } from "./shared";

@@ -1,7 +1,8 @@
 import { useDisclosure } from "@chakra-ui/react";
 import { useWeb3React } from "@web3-react/core";
 import uniqueId from "lodash/uniqueId";
-import { Button, ButtonProps } from "uikit";
+import { Button } from "uikit";
+import { ButtonProps } from "uikit/Button/Button"
 import noop from "lodash/noop";
 import { isAuthorized } from "utils/login";
 import useSignInHandler from "hooks/useSignInHandler";

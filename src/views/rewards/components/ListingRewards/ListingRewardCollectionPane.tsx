@@ -3,7 +3,7 @@ import { useWeb3React } from "@web3-react/core";
 import { useGetTradingListingRewards } from "hooks/useGetTradingListingRewards";
 import { useTranslation } from "next-i18next";
 import { ChevronDown, ChevronUp, Text } from "uikit";
-import { getDurationUntilNextDistribution } from "../../utils/getDurationUntilNextDistribution";
+import { getDurationUntilNextDistribution } from "utils/getDurationUntilNextDistribution";
 import { SectionRow } from "../SectionRow";
 import { ListingRewardCollect } from "./ListingRewardCollect";
 import { TokenWithPriceDisplay } from "./shared";

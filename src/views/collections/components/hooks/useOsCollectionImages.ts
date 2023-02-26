@@ -1,5 +1,5 @@
 import { useQuery, UseQueryOptions } from "react-query";
-import { currentChainInfo } from "config";
+import { currentChainInfo } from "config/chains";
 import { ImageData } from "types/graphql";
 
 interface OsCollectionResponse {

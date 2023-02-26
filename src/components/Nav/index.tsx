@@ -2,13 +2,14 @@ import React, { memo } from "react";
 import { useWeb3React } from "@web3-react/core";
 import { Flex, Box, FlexProps, Stack } from "@chakra-ui/react";
 import { navHeightResponsive } from "uikit/theme/global";
-import { ConnectWalletIconButton, ConnectWalletButton, LanguageSwitcherButtons } from "components/Buttons";
+import { ConnectWalletIconButton, ConnectWalletButton } from "components/Buttons/ConnectWalletButton";
+import { LanguageSwitcherButtons } from "components/Buttons/LanguageSwitherButton/LanguageSwitcherButton";
 import Logo from "./Logo";
 import UserMenu from "./UserMenu";
 import { MobileDrawer, LinkList } from "./NavLinks";
 import { DesktopSearchButton, MobileSearchButton } from "./SearchButton";
 import { useTranslation } from "next-i18next";
-import { ColorModeButton } from "components/Buttons";
+import { ColorModeButton } from "components/Buttons/ColorModeButton";
 
 export type NavProps = FlexProps;
 

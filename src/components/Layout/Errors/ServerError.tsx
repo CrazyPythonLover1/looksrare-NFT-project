@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { Box } from "@chakra-ui/react";
-import { Text } from "../../../uikit/Text/Text";
+import { Text } from "uikit/Text/Text";
 import { HttpError } from "./HttpError";
 
 export const ServerError = () => {

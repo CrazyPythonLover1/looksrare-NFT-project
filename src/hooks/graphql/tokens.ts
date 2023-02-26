@@ -1,5 +1,5 @@
-import { baseQueryKeys } from "../../config/reactQueries";
-import { ORDERS_PER_PAGE, TOKENS_PER_PAGE, TOKENS_WITH_BIDS_PER_PAGE } from "../../config/constants";
+import { baseQueryKeys } from "config/reactQueries";
+import { ORDERS_PER_PAGE, TOKENS_PER_PAGE, TOKENS_WITH_BIDS_PER_PAGE } from "config/constants";
 import last from "lodash/last";
 import { useCallback } from "react";
 import { useInfiniteQuery, UseInfiniteQueryOptions, useQuery, useQueryClient, UseQueryOptions } from "react-query";
@@ -13,19 +13,18 @@ import {
   TokenOwner,
   TokenOwnerFilter,
   TokensSort,
-} from "../../types/graphql";
-import { MakerOrderWithSignatureAndHash } from "../../types/orders";
+} from "types/graphql";
+import { MakerOrderWithSignatureAndHash } from "types/orders";
 import {
-  getTokens,
-  getTokenBids,
   getToken,
   GetTokenParams,
   getTokenOwners,
   GetTokenOwnersParams,
-  getUserTokens,
-} from "../../utils/graphql/graphql";
-import getTokenOrders from "../../utils/graphql/getTokenOrders";
-import { getTokensWithBids, NFTWithBids, TokensWithBidsParams } from "../../utils/graphql/getTokensWithBids";
+} from "utils/graphql/getToken";
+import { getTokens, getUserTokens } from "utils/graphql/getTokens"
+import { getTokenBids } from "utils/graphql/getTokenBids"
+import getTokenOrders from "utils/graphql/getTokenOrders";
+import { getTokensWithBids, NFTWithBids, TokensWithBidsParams } from "utils/graphql/getTokensWithBids";
 
 export const tokenKeys = {
   ...baseQueryKeys("tokens"),
@@ -127,6 +126,7 @@ const getNextTokenOrdersPageParam = (
     return undefined;
   }
   const lastBid = last(lastPage);
+  // @ts-ignore
   return { first: paginationFirst, cursor: lastBid?.hash };
 };
 

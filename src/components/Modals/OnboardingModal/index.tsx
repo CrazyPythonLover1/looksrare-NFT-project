@@ -17,8 +17,8 @@ import {
   EthIcon,
   DoubleArrowIcon,
   TooltipText,
-} from "../../../uikit";
-import { ModalProps } from "../../../uikit/Modal/Modal"
+} from "uikit";
+import { ModalProps } from "uikit/Modal/Modal"
 
 import { LooksLogoBanner } from "../../Svg/LooksLogoBanner";
 

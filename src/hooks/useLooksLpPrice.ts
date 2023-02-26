@@ -1,8 +1,8 @@
 import { useActiveProvider } from "hooks/useActiveProvider";
-import { addresses } from "config";
+import { addresses } from "config/addresses";
 import { BigNumber, FixedNumber } from "ethers";
 import { useQuery } from "react-query";
-import { SupportedProviders } from "types";
+import { SupportedProviders } from "types/config";
 import { balanceOf, totalSupply } from "utils/calls/erc20";
 import { toDecimals } from "utils/format";
 

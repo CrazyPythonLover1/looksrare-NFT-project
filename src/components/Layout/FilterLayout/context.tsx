@@ -7,7 +7,7 @@
 
 import { createContext } from "react";
 import { useDisclosure, UseDisclosureReturn } from "@chakra-ui/react";
-import { navHeightResponsive } from "../../../uikit/theme/global";
+import { navHeightResponsive } from "uikit/theme/global";
 
 
 

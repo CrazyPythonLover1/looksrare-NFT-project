@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
 import { dehydrate, QueryClient } from "react-query";
-import { currentChainInfo } from "config";
+import { currentChainInfo } from "config/chains";
 import { headers } from "config/server";
 import { getCollectionLeaderboard } from "utils/graphql";
 import { TradingView } from "views/rewards/TradingView";

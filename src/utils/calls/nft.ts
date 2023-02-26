@@ -2,7 +2,7 @@ import { TransactionResponse } from "@ethersproject/abstract-provider";
 import { BigNumber } from "ethers";
 import { ERC721Abi, ERC1155Abi } from "@looksrare/sdk";
 import { getContract } from "utils/contracts";
-import { SupportedProviders } from "types";
+import { SupportedProviders } from "types/config";
 
 /**
  *

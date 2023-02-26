@@ -14,12 +14,12 @@
 import { Box, Flex, FlexProps, IconButton, useDisclosure } from "@chakra-ui/react";
 import PercentChangeLabel from "../PercentChangeLabel";
 import { useTranslation } from "next-i18next";
-import { CollectionBase } from "../../types/graphql";
-import ChevronDown from "../../uikit/Icons/components/ChevronDown";
-import ChevronUp from "../../uikit/Icons/components/ChevronUp";
-import { Text } from "../../uikit/Text/Text";
-import { formatNumberToLocale, formatToSignificant } from "../../utils/format";
-import { useOsCollectionImages } from "../../views/collections/components/hooks/useOsCollectionImages";
+import { CollectionBase } from "types/graphql";
+import ChevronDown from "uikit/Icons/components/ChevronDown";
+import ChevronUp from "uikit/Icons/components/ChevronUp";
+import { Text } from "uikit/Text/Text";
+import { formatNumberToLocale, formatToSignificant } from "utils/format";
+import { useOsCollectionImages } from "views/collections/components/hooks/useOsCollectionImages";
 import { Amount } from "./Amount";
 import { MobileCollectionLink } from "./MobileCollectionLink";
 

@@ -27,6 +27,7 @@ const CurrencyInput = ({
   ...props
 }: CurrencyInputProps) => {
   const { t } = useTranslation();
+  // @ts-ignore
   const { icon: Icon, symbol } = currenciesMapBySymbol[currency];
 
   return (

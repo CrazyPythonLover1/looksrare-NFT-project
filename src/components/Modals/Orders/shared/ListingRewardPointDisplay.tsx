@@ -1,11 +1,11 @@
 import { useMemo } from "react";
 import { Flex } from "@chakra-ui/react";
 import { BigNumber, constants } from "ethers";
-import { DAILY_FLOOR_THRESHOLD } from "config";
+import { DAILY_FLOOR_THRESHOLD } from "config/constants";
 import { useCurrentListingReward } from "hooks/graphql/currentListingReward";
 import { HelpIcon, LogoPolygonIcon, Popover, Text, WarningFilledIcon } from "uikit";
 import { formatNumberToLocale, toDecimals } from "utils/format";
-import { ListingRewardDetailTooltipText } from "components/TooltipText";
+import { ListingRewardDetailTooltipText } from "components/TooltipText/ListingRewardDetailTooltipText";
 
 interface ListingRewardPointDisplayProps {
   points: number | null;

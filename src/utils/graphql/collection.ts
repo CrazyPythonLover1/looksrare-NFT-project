@@ -1,7 +1,7 @@
 import { BigNumberish } from "ethers";
 import { gql } from "graphql-request";
-import { COLLECTION_LEADERBOARD_TO_FETCH } from "../../config/constants";
-import { TokenStandard } from "../../types/config";
+import { COLLECTION_LEADERBOARD_TO_FETCH } from "config/constants";
+import { TokenStandard } from "types/config";
 import {
   Attribute,
   Collection,
@@ -13,8 +13,8 @@ import {
   ImageData,
   Pagination,
   Royalty,
-} from "../../types/graphql";
-import { getAuthCookie } from "../../utils/cookies";
+} from "types/graphql";
+import { getAuthCookie } from "utils/cookies";
 import {
   AttributeFragment,
   attributeFragment,

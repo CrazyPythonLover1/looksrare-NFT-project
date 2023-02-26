@@ -18,12 +18,12 @@ import { useTranslation } from "react-i18next";
 import { useWeb3React } from "@web3-react/core";
 import getUnixTime from "date-fns/getUnixTime";
 import filter from "lodash/filter";
-import { useOrders } from "../../hooks/graphql/orders";
-import { OrderFilter, OrderSort, ImageData } from "../../types/graphql";
-import { isAddressEqual } from "../../utils/guards";
+import { useOrders } from "hooks/graphql/orders";
+import { OrderFilter, OrderSort, ImageData } from "types/graphql";
+import { isAddressEqual } from "utils/guards";
 import { MakerOrderWithSignatureAndHash } from "types/orders";
-import { TokenStandard } from "../../types/config";
-import { Button, ButtonProps } from "../../uikit/Button/Button";
+import { TokenStandard } from "types/config";
+import { Button, ButtonProps } from "uikit/Button/Button";
 import BuyNowModal from "../Modals/Orders/BuyNowModal";
 
 

@@ -4,7 +4,7 @@
 
 
 import { Flex, FlexProps, Skeleton, TextProps } from "@chakra-ui/react";
-import { Text } from "../../uikit/Text/Text";
+import { Text } from "uikit/Text/Text";
 
 
 

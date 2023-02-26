@@ -8,8 +8,8 @@
 
 import { useTranslation } from "react-i18next";
 import noop from "lodash/noop";
-import { useUpdateUserAvatar, UseUpdateUserAvatarOptions } from "../../hooks/graphql/user";
-import { useToast } from "../../hooks/useToast";
+import { useUpdateUserAvatar, UseUpdateUserAvatarOptions } from "hooks/graphql/user";
+import { useToast } from "hooks/useToast";
 import { AuthorizedActionButton, AuthorizedActionButtonProps } from "../Modals/SignInModal/AuthorizedActionButton";
 
 

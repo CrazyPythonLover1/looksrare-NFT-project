@@ -4,14 +4,15 @@ import Link from "next/link";
 import { Flex, Box } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
-import { Text, Button, ExternalLink } from "uikit";
+import { Text, Button } from "uikit";
+import { ExternalLink } from "uikit/Link/Link"
 import DidYouKnowSlide from "./DidYouKnowSlide";
 import { useWeb3React } from "@web3-react/core";
 
 import "swiper/css";
 import SwiperControl from "./SwiperControl";
 
-const DidYouKnowHeading: React.FC = ({ children }) => (
+const DidYouKnowHeading: React.FC<any> = ({ children }) => (
   <Text pb={{ base: 8, md: 0 }} color="gray.900" bold textStyle="display-02">
     {children}
   </Text>

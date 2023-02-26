@@ -2,10 +2,11 @@ import { useCallback } from "react";
 import { useQuery, useQueryClient, UseQueryOptions } from "react-query";
 import { constants } from "ethers";
 import uniq from "lodash/uniq";
+// @ts-ignore
 import namehash from "eth-ens-namehash";
 import { Event, User, UserProfileDisplay } from "types/graphql";
 import { getResolveRecordsContract } from "utils/contracts";
-import { getUserProfileDisplay } from "utils/graphql";
+import { getUserProfileDisplay } from "utils/graphql/user";
 import { isAddressEqual } from "utils/guards";
 import { useActiveProvider } from "./useActiveProvider";
 import { UserHitProps } from "components/Nav/SearchModal/SearchResults/UserHit";

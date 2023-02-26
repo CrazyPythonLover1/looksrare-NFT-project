@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { Text, TextProps } from "../../uikit/Text/Text";
+import { Text, TextProps } from "uikit/Text/Text";
 
 export interface FormLabelProps extends TextProps {
   isRequired?: boolean;

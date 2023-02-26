@@ -1,6 +1,7 @@
 import { useInfiniteQuery, UseInfiniteQueryOptions, useQuery, UseQueryOptions } from "react-query";
 import last from "lodash/last";
-import { baseQueryKeys, ORDERS_PER_PAGE } from "config";
+import { baseQueryKeys } from "config/reactQueries";
+import { ORDERS_PER_PAGE } from "config/constants"
 import { OrderFilter, OrderSort, OrderStatus, Pagination } from "types/graphql";
 import { MakerOrderWithSignatureAndHash } from "types/orders";
 import getOrders from "utils/graphql/getOrders";
@@ -9,7 +10,7 @@ import {
   CollectionMakerOrderWithMeta,
   StandardMakerOrderWithMeta,
   MakerOrdersWithMetaParams,
-} from "utils/graphql";
+} from "utils/graphql/getMakerOrdersWithMeta";
 import getOrderNonces from "utils/graphql/getOrderNonces";
 
 export const ORDERS_WITH_META_KEY = "orders-with-meta";
@@ -75,6 +76,7 @@ export const useInfiniteMakerOrdersWithMeta = (
           return undefined;
         }
         const lastOrder = last(lastPage);
+        // @ts-ignore
         return { first: paginationFirst, cursor: lastOrder?.hash };
       },
       refetchOnWindowFocus: false,

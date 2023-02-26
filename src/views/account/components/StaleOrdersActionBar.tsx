@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { LOCAL_STORAGE_SNOOZE_ACTION_REQUIRED_ORDERS } from "config";
+import { LOCAL_STORAGE_SNOOZE_ACTION_REQUIRED_ORDERS } from "config/localStorage";
 import { useStaleOrders } from "hooks/graphql/orders";
 import useLocalStorageSnooze from "hooks/useLocalStorageSnooze";
 import { ActionRequiredAlert, ActionRequiredAlertNarrow } from "./StaleOrderAlerts";

@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import { useRouter } from "next/router";
 import SearchInsights, { InsightsMethodMap } from "search-insights";
 import { ALGOLIA_COLLECTIONS_INDEX, ALGOLIA_TOKENS_INDEX, ALGOLIA_USERS_INDEX } from "config/algolia";
-import { APP_CHAIN_ID } from "config";
+import { APP_CHAIN_ID } from "config/chains";
 
 export enum AlgoliaEventNames {
   TOKEN_HIT_CLICKED = "Token Hit Clicked",

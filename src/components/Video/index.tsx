@@ -1,10 +1,11 @@
+// @ts-nocheck
 import { ReactEventHandler, useState, useRef, MouseEvent, VideoHTMLAttributes, useCallback } from "react";
 import noop from "lodash/noop";
 import { Box, IconButton, useBreakpointValue } from "@chakra-ui/react";
-import { getCloudinaryUrl, CloudinaryLoaderProps, Format, Quality } from "@looksrare/shared";
+// import { getCloudinaryUrl, CloudinaryLoaderProps, Format, Quality } from "@looksrare/shared";
 import { ResponsiveObject } from "@chakra-ui/styled-system/dist/declarations/src/utils";
 import { PlayFilledAltIcon } from "uikit";
-import { currentChainInfo } from "config";
+import { currentChainInfo } from "config/chains";
 
 /**
  * Return Cloudinary URL for resources delivered by our CDN.

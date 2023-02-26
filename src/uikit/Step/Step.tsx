@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, BoxProps, Flex, Spinner } from "@chakra-ui/react";
-import { ClockIcon, CheckmarkFilledIcon } from "../Icons";
-import { Text } from "../Text";
+import { ClockIcon, CheckmarkFilledIcon } from "../index";
+import { Text } from "../Text/Text";
 
 export type StepStatus = "past" | "current" | "future";
 

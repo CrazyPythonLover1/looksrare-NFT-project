@@ -7,7 +7,7 @@
 
 
 import { Flex, FlexProps, AspectRatioProps } from "@chakra-ui/react";
-import { TextProps } from "../../uikit/Text/Text";
+import { TextProps } from "uikit/Text/Text";
 import { Avatar, AvatarProps } from "./Avatar";
 import { UserProfileDisplay } from "../UserProfileDisplay";
 

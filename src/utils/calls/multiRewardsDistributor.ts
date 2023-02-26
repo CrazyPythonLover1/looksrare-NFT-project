@@ -1,9 +1,11 @@
 import { BigNumber } from "ethers";
 import { MultiRewardsDistributorAbi } from "@looksrare/sdk";
 import { TransactionResponse } from "@ethersproject/abstract-provider";
-import { addresses, LISTING_REWARDS_TREE_ID, TRADING_REWARDS_TREE_ID } from "config";
+import { addresses } from "config/addresses";
+import { LISTING_REWARDS_TREE_ID, TRADING_REWARDS_TREE_ID } from "config/constants";
 import { getMultiRewardsDistributorContract } from "utils/contracts";
-import { SupportedProviders } from "types";
+import { SupportedProviders } from "types/config";
+// @ts-ignore
 import { Call, multicall } from "@looksrare/shared";
 
 /**
@@ -32,23 +34,23 @@ export const claim = async (
  * might support other trees so this will need to be more generic
  */
 export const getRewardsClaimed = async (library: SupportedProviders, address: string) => {
-  const calls: Call[] = [
-    {
-      contractAddress: addresses.MULTI_REWARDS_DISTRIBUTOR,
-      functionName: "amountClaimedByUserPerTreeId",
-      params: [address, TRADING_REWARDS_TREE_ID],
-    },
-    {
-      contractAddress: addresses.MULTI_REWARDS_DISTRIBUTOR,
-      functionName: "amountClaimedByUserPerTreeId",
-      params: [address, LISTING_REWARDS_TREE_ID],
-    },
-  ];
-  const [tradingRewards, listingRewards]: BigNumber[] = await multicall(
-    library,
-    addresses.MULTICALL2,
-    MultiRewardsDistributorAbi,
-    calls
-  );
-  return { tradingRewards, listingRewards };
+  // const calls: Call[] = [
+  //   {
+  //     contractAddress: addresses.MULTI_REWARDS_DISTRIBUTOR,
+  //     functionName: "amountClaimedByUserPerTreeId",
+  //     params: [address, TRADING_REWARDS_TREE_ID],
+  //   },
+  //   {
+  //     contractAddress: addresses.MULTI_REWARDS_DISTRIBUTOR,
+  //     functionName: "amountClaimedByUserPerTreeId",
+  //     params: [address, LISTING_REWARDS_TREE_ID],
+  //   },
+  // ];
+  // const [tradingRewards, listingRewards]: BigNumber[] = await multicall(
+  //   library,
+  //   addresses.MULTICALL2,
+  //   MultiRewardsDistributorAbi,
+  //   calls
+  // );
+  // return { tradingRewards, listingRewards };
 };

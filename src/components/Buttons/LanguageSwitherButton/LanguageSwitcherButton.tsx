@@ -8,10 +8,10 @@
 
 import { MenuItem, MenuList, MenuButton, useBreakpointValue, IconButton, Flex } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import { languageList } from "../../../config/localization";
-import { Button, ButtonProps } from "../../../uikit/Button/Button";
-import { GlobeIcon } from "../../../uikit";
-import { Menu } from "../../../uikit/Menu/Menu";
+import { languageList } from "config/localization";
+import { Button, ButtonProps } from "uikit/Button/Button";
+import { GlobeIcon } from "uikit";
+import { Menu } from "uikit/Menu/Menu";
 
 
 interface LanguageSwitcherButtonsProps extends ButtonProps {

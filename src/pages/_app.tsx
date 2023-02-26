@@ -8,18 +8,18 @@ import { Web3ReactProvider } from "@web3-react/core";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { ChakraProvider } from "@chakra-ui/react";
 // import { currentChainInfo, seoConfig } from "config";
-import { ETH_AVG_BLOCK_TIME_MS } from "../config/constants"
+import { ETH_AVG_BLOCK_TIME_MS } from "config/constants"
 // import { EagerConnectProvider } from "contexts";
 // import { useInitializeDataDogRum } from "hooks/useInitializeDataDogRum";
 // import { useInitializeAlgoliaInsights } from "hooks/useInitializeAlgoliaInsights";
 // import { GoogleTagManager } from "components/GoogleTagManager";
 // import { LoadingProgressBar } from "components/LoadingProgressBar";
-import { theme } from "../uikit/theme";
-import { getLibrary } from "../utils/connectors";
-import nextI18NextConfig from "../../next-i18next.config";
+import { theme } from "uikit/theme";
+import { getLibrary } from "utils/connectors";
+// import nextI18NextConfig from "../../next-i18next.config";
 
-// import "../uikit/Datepicker/theme.css";
-// import "../views/collections/components/banner.css";
+// import "uikit/Datepicker/theme.css";
+// import "views/collections/components/banner.css";
 
 const queryClientOptions: QueryClientConfig = {
   defaultOptions: {
@@ -66,4 +66,6 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
   );
 };
 
-export default appWithTranslation(App, nextI18NextConfig);
+// export default appWithTranslation(App, nextI18NextConfig);
+// export default appWithTranslation(App); 
+export default App;

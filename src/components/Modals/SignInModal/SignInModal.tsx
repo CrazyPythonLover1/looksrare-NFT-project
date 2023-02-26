@@ -1,8 +1,9 @@
 import { Box, Flex, Spinner, Divider } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { Modal, ModalBody, ModalProps, Text, MisuseAltIcon } from "uikit";
+import { Modal, ModalBody, Text, MisuseAltIcon } from "uikit";
+import { ModalProps } from "uikit/Modal/Modal"
 import { SignInStatus } from "hooks/useSignInHandler";
-import { TextButton } from "components/Buttons";
+import { TextButton } from "components/Buttons/TextButton";
 
 export interface SignInModalProps {
   isOpen: ModalProps["isOpen"];

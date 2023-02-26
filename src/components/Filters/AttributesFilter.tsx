@@ -20,18 +20,18 @@ import { useDisclosure } from "@chakra-ui/hooks";
 import { Box, Flex, GridItem, Collapse, Fade, Grid } from "@chakra-ui/react";
 import capitalize from "lodash/capitalize";
 import findIndex from "lodash/findIndex";
-import ChevronDown from "../../uikit/Icons/components/ChevronDown";
-import ChevronUp from "../../uikit/Icons/components/ChevronUp";
-import { ListIcon, HelpIcon } from "../../uikit";
-import { Button } from "../../uikit/Button/Button";
-import Popover from "../../uikit/Popover/Popover";
-import { TooltipText } from "../../uikit/Text/Text";
-import { Attribute, AttributeFilter } from "../../types/graphql";
+import ChevronDown from "uikit/Icons/components/ChevronDown";
+import ChevronUp from "uikit/Icons/components/ChevronUp";
+import { ListIcon, HelpIcon } from "uikit";
+import { Button } from "uikit/Button/Button";
+import Popover from "uikit/Popover/Popover";
+import { TooltipText } from "uikit/Text/Text";
+import { Attribute, AttributeFilter } from "types/graphql";
 import { useFilterLayout } from "../Layout/FilterLayout/hooks";
 import { BasicPropertyButton } from "../Property/PropertyButtons";
 import { PropertyGroupHeader } from "../Property/PropertyGroupHeader";
 import { PropertyHeader } from "../Property/styles";
-import { formatToSignificant } from "../../utils/format";
+import { formatToSignificant } from "utils/format";
 
 
 

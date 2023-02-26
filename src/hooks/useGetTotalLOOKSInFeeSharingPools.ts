@@ -1,7 +1,7 @@
 import { useQuery, UseQueryOptions } from "react-query";
 import { BigNumber } from "ethers";
-import { CONTRACT_BALANCE_INTERVAL } from "config";
-import { SupportedProviders } from "types";
+import { CONTRACT_BALANCE_INTERVAL } from "config/constants";
+import { SupportedProviders } from "types/config";
 import { useActiveProvider } from "hooks/useActiveProvider";
 import {
   calculateSharePriceInLOOKS as calculateFeeSharingSharePriceInLOOKS,

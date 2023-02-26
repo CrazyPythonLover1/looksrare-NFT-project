@@ -5,7 +5,7 @@
 
 
 import { Trans } from "next-i18next";
-import { Text } from "../../uikit/Text/Text";
+import { Text } from "uikit/Text/Text";
 import intervalToDuration from "date-fns/intervalToDuration";
 
 

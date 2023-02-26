@@ -9,11 +9,11 @@
 
 import { Box, IconButton } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import { formatToSignificant } from "../../utils/format";
+import { formatToSignificant } from "utils/format";
 import { BigNumber } from "ethers";
-import Popover from "../../uikit/Popover/Popover";
-import { ResetIcon } from "../../uikit";
-import { TooltipText } from "../../uikit/Text/Text";
+import Popover from "uikit/Popover/Popover";
+import { ResetIcon } from "uikit";
+import { TooltipText } from "uikit/Text/Text";
 import { AuthorizedActionButton, AuthorizedActionButtonProps } from "../Modals/SignInModal/AuthorizedActionButton";
 
 

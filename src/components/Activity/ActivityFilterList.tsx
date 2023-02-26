@@ -8,10 +8,10 @@
 
 import { Flex, TagLabel, TagCloseButton } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { Button } from "../../uikit/Button/Button";
-import { Tag } from "../../uikit/Tag/Tag";
-import { Text } from "../../uikit/Text/Text";
-import { useEventTypeLabels } from "../../hooks/useEventTypeLabels";
+import { Button } from "uikit/Button/Button";
+import { Tag } from "uikit/Tag/Tag";
+import { Text } from "uikit/Text/Text";
+import { useEventTypeLabels } from "hooks/useEventTypeLabels";
 import { useActivityFilter } from "../Filters/hooks/useActivityFilter";
 
 

@@ -16,6 +16,7 @@ interface Props extends CheckboxProps {
 
 const CurrencyCheckbox: React.FC<Props> = ({ isChecked, onCheck, userBalance, currency, ...props }) => {
   const { t } = useTranslation();
+  // @ts-ignore
   const { icon: Icon, symbol } = currenciesMapBySymbol[currency];
 
   const isDisabled = !onCheck || userBalance?.isZero();

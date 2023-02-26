@@ -10,9 +10,9 @@
 import React from "react";
 import { ActivityFilterList } from "./ActivityFilterList";
 import { ActivityResults } from "./ActivityResults";
-import { useInfiniteEvents } from "../../hooks/graphql/events";
+import { useInfiniteEvents } from "hooks/graphql/events";
 import { Box } from "@chakra-ui/react";
-import { EventFilter } from "../../types/graphql";
+import { EventFilter } from "types/graphql";
 
 
 

@@ -1,7 +1,7 @@
-import { Modal } from "../../../uikit";
-import { ModalProps } from "../../../uikit/Modal/Modal";
+import { Modal } from "uikit";
+import { ModalProps } from "uikit/Modal/Modal";
 import InstantSearch from "./InstantSearch";
-import { pageHeightRemMobile, pageHeightRemDesktop } from "../../../uikit/theme/global";
+import { pageHeightRemMobile, pageHeightRemDesktop } from "uikit/theme/global";
 
 export type ConnectWalletModalProps = Pick<ModalProps, "isOpen" | "onClose">;
 

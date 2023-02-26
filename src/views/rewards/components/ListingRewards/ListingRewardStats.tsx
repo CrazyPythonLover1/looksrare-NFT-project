@@ -8,7 +8,7 @@ import LogoPolygon from "uikit/Icons/components/LogoPolygon";
 import { timeAgo } from "utils/date";
 import { formatNumberToLocale } from "utils/format";
 import { getEstimatedLooksPerListing } from "utils/getEstimatedLooksPerListing";
-import { getDurationUntilNextDistribution } from "../../utils/getDurationUntilNextDistribution";
+import { getDurationUntilNextDistribution } from "utils/getDurationUntilNextDistribution";
 
 type ListingRewardStatsProps = GridProps;
 

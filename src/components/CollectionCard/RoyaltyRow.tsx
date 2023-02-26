@@ -13,14 +13,14 @@
 
 import { Box, Flex, FlexProps } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import { addresses } from "../../config/addresses";
-import { Royalty } from "../../types/graphql";
-import { EthHalfIcon, WethHalfIcon } from "../../uikit";
-import { ExternalLink } from "../../uikit/Link/Link";
-import { Text } from "../../uikit/Text/Text";
-import { timeAgo } from "../../utils/date";
-import { formatToSignificant } from "../../utils/format";
-import { getExplorerLink } from "../../utils/chains";
+import { addresses } from "config/addresses";
+import { Royalty } from "types/graphql";
+import { EthHalfIcon, WethHalfIcon } from "uikit";
+import { ExternalLink } from "uikit/Link/Link";
+import { Text } from "uikit/Text/Text";
+import { timeAgo } from "utils/date";
+import { formatToSignificant } from "utils/format";
+import { getExplorerLink } from "utils/chains";
 import { Image } from "../Image";
 
 

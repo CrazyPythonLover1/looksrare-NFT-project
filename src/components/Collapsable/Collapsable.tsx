@@ -7,8 +7,8 @@
 import { useEffect } from "react";
 import { Flex, Box, BoxProps, useDisclosure, Collapse, FlexProps, CollapseProps } from "@chakra-ui/react";
 import noop from "lodash/noop";
-import ChevronDown from "../../uikit/Icons/components/ChevronDown"
-import ChevronUp from "../../uikit/Icons/components/ChevronUp"
+import ChevronDown from "uikit/Icons/components/ChevronDown"
+import ChevronUp from "uikit/Icons/components/ChevronUp"
 
 
 

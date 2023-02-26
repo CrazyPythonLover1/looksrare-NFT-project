@@ -10,11 +10,11 @@
 import { Box, Flex, FlexProps } from "@chakra-ui/react";
 import { BigNumber, constants } from "ethers";
 import { useTranslation } from "next-i18next";
-import { HelpIcon } from "../../uikit";
-import Popover from "../../uikit/Popover/Popover";
-import { Text } from "../../uikit/Text/Text";
-import { TooltipText } from "../../uikit/Text/Text";
-import { formatFees } from "../../utils/format";
+import { HelpIcon } from "uikit";
+import Popover from "uikit/Popover/Popover";
+import { Text } from "uikit/Text/Text";
+import { TooltipText } from "uikit/Text/Text";
+import { formatFees } from "utils/format";
 
 
 

@@ -1,4 +1,4 @@
-import { currentChainInfo } from "config";
+import { currentChainInfo } from "config/chains";
 
 export const getExplorerLink = (
   data: string | number,

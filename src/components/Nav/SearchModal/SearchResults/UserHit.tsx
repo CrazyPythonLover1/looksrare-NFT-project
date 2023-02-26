@@ -3,12 +3,12 @@ import { connectHitInsights } from "react-instantsearch-dom";
 import { ConnectHitInsightsProvided } from "react-instantsearch-core";
 import Link from "next/link";
 import SearchInsights from "search-insights";
-import { Text, VerifiedIcon } from "../../../../uikit";
-import { APP_CHAIN_ID } from "../../../../config/chains";
-import { ALGOLIA_USERS_INDEX } from "../../../../config/algolia";
-import { useUserProfileDisplay } from "../../../../hooks/useUserProfileDisplay";
-import { AlgoliaEventNames } from "../../../../hooks/useSendAlgoliaEvent";
-import { Avatar } from "../../../../components/Avatar";
+import { Text, VerifiedIcon } from "uikit";
+import { APP_CHAIN_ID } from "config/chains";
+import { ALGOLIA_USERS_INDEX } from "config/algolia";
+import { useUserProfileDisplay } from "hooks/useUserProfileDisplay";
+import { AlgoliaEventNames } from "hooks/useSendAlgoliaEvent";
+import { Avatar } from "components/Avatar";
 
 export type UserHitProps = {
   name: string;

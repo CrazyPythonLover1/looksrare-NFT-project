@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { AlertDescription, AlertTitle, Box, Flex, IconButton, Stack, useBreakpointValue } from "@chakra-ui/react";
 import { Alert, Button, CloseIcon } from "uikit";
-import { AuthorizedActionButton } from "components/Modals/SignInModal";
+import { AuthorizedActionButton } from "components/Modals/SignInModal/AuthorizedActionButton";
 
 export const SignInAlert = ({ onAuthSuccess }: { onAuthSuccess: (jwt?: string) => void }) => {
   const { t } = useTranslation();

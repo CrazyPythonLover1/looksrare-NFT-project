@@ -1,7 +1,7 @@
 import { BigNumber } from "ethers";
 import { TransactionResponse } from "@ethersproject/abstract-provider";
 import { getWETHContract } from "utils/contracts";
-import { SupportedProviders } from "types";
+import { SupportedProviders } from "types/config";
 
 /**
  * Deposit ETH to wrap to WETH

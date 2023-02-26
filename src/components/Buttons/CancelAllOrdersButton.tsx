@@ -2,7 +2,7 @@ import { useDisclosure } from "@chakra-ui/react";
 import CancelAllOrdersModal from "../Modals/CancelAllOrdersModal";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Button, ButtonProps } from "../../uikit/Button/Button";
+import { Button, ButtonProps } from "uikit/Button/Button";
 
 export const CancelAllOrdersButton: React.FC<ButtonProps> = (props) => {
   const { t } = useTranslation();

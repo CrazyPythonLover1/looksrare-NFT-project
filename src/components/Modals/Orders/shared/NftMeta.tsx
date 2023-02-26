@@ -5,7 +5,7 @@ import { CollectionFloor, ImageData } from "types/graphql";
 import { getGlobalFloor } from "utils/floorPricePercentHelpers";
 import { formatToSignificant } from "utils/format";
 import { Image } from "components/Image";
-import { FloorTooltipText } from "components/TooltipText";
+import { FloorTooltipText } from "../../../TooltipText/GlobalTooltipText";
 
 interface Props extends FlexProps {
   tokenName: string;

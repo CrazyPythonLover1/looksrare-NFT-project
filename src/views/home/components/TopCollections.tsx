@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Flex } from "@chakra-ui/react";
 import { Text, Button } from "uikit";
 import { CollectionBase } from "types/graphql";
-import { CollectionTable } from "components/CollectionsTable";
-import { COLLECTIONS_TO_FETCH_FOR_HOME } from "config";
+import { CollectionTable } from "components/CollectionsTable/CollectionTable";
+import { COLLECTIONS_TO_FETCH_FOR_HOME } from "config/constants";
 
 interface Props {
   topCollections?: CollectionBase[];

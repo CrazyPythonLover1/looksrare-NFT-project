@@ -1,8 +1,8 @@
-import { getLoginMessage } from "@looksrare/shared";
+// import { getLoginMessage } from "@looksrare/shared";
 import { Signer } from "ethers";
 import { request, gql } from "graphql-request";
 import jwt_decode, { JwtPayload } from "jwt-decode";
-import { currentChainInfo } from "config";
+import { currentChainInfo } from "config/chains";
 import { getAuthCookie, setAuthCookie } from "utils/cookies";
 import { isAddressEqual } from "utils/guards";
 
@@ -45,10 +45,10 @@ const login = async (address: string, message: string, signature: string) => {
  * @returns Json Web Token
  */
 const signAndLogin = async (signer: Signer, account: string): Promise<string> => {
-  const message = getLoginMessage();
-  const signature = await signer.signMessage(message);
-  const jwt = await login(account, message, signature);
-  return jwt;
+  // const message = getLoginMessage();
+  // const signature = await signer.signMessage(message);
+  // const jwt = await login(account, message, signature);
+  return "";
 };
 
 /**

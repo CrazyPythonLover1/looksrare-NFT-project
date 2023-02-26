@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import { forwardRef, Link as ChakraLink, LinkProps as ChakraLinkProps } from "@chakra-ui/react";
 // import { LaunchOpenInNewIcon } from "uikit";
-import { ArrowRightIcon } from "../../uikit";
+import { ArrowRightIcon } from "uikit";
 
 export type LinkProps = ChakraLinkProps;
 export interface ExternalLinkProps extends LinkProps {

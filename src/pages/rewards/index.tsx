@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { currentChainInfo } from "config";
+import { currentChainInfo } from "config/chains";
 import { NextSeo } from "next-seo";
 import { RewardsView } from "views/rewards/RewardsView";
 

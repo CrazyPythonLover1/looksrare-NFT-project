@@ -2,12 +2,12 @@ import { Box, Flex, FlexProps, Grid, GridItem, Skeleton } from "@chakra-ui/react
 import { BigNumber } from "ethers";
 import Link from "next/link";
 import { Trans } from "next-i18next";
-import { EthHalfIcon, HelpIcon, LogoPolygonIcon, Text, VerifiedIcon } from "../../../../uikit";
-import { Avatar } from "../../../../components/Avatar";
-import { useOsCollectionImages } from "../../../../views/collections/components/hooks/useOsCollectionImages";
-import { CollectionLeaderboard } from "../../../../utils/graphql/collection";
-import { useCoinPrices } from "../../../../hooks/useCoinPrices";
-import { formatNumberToLocale, formatToSignificant, fromDecimals } from "../../../../utils/format";
+import { EthHalfIcon, HelpIcon, LogoPolygonIcon, Text, VerifiedIcon } from "uikit";
+import { Avatar } from "components/Avatar";
+import { useOsCollectionImages } from "views/collections/components/hooks/useOsCollectionImages";
+import { CollectionLeaderboard } from "utils/graphql/collection";
+import { useCoinPrices } from "hooks/useCoinPrices";
+import { formatNumberToLocale, formatToSignificant, fromDecimals } from "utils/format";
 
 interface CollectionAmountDisplayProps {
   label: string;

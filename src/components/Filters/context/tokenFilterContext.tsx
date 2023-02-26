@@ -20,11 +20,11 @@ import { useRouter } from "next/router";
 import { BigNumberish } from "ethers";
 import isEmpty from "lodash/isEmpty";
 import findIndex from "lodash/findIndex";
-import { Attribute, TokenFilter } from "../../../types/graphql";
-import { toDecimals } from "../../../utils/format";
-import usePreviousValue from "../../../hooks/usePreviousValue";
-import { USER_ACCOUNT_URI } from "../../../config/urls";
-import { isAddressEqual } from "../../../utils/guards";
+import { Attribute, TokenFilter } from "types/graphql";
+import { toDecimals } from "utils/format";
+import usePreviousValue from "hooks/usePreviousValue";
+import { USER_ACCOUNT_URI } from "config/urls";
+import { isAddressEqual } from "utils/guards";
 
 
 

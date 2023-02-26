@@ -1,6 +1,6 @@
 import { BigNumber } from "ethers";
 import { useQuery, UseQueryOptions } from "react-query";
-import { CONTRACT_BALANCE_INTERVAL } from "config";
+import { CONTRACT_BALANCE_INTERVAL } from "config/constants";
 import { useActiveProvider } from "hooks/useActiveProvider";
 import {
   AggregatorUserInfo,

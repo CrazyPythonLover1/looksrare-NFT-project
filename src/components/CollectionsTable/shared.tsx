@@ -13,8 +13,8 @@ import { Box, BoxProps, Flex, FlexProps, Grid, GridItem, Skeleton } from "@chakr
 import PercentChangeLabel from "../PercentChangeLabel";
 import { BigNumberish } from "ethers";
 import { useTranslation } from "next-i18next";
-import { Text, TextProps } from "../../uikit/Text/Text";
-import { formatToSignificant } from "../../utils/format";
+import { Text, TextProps } from "uikit/Text/Text";
+import { formatToSignificant } from "utils/format";
 import { Amount } from "./Amount";
 
 

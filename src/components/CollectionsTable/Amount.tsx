@@ -4,8 +4,8 @@
 
 
 import { Flex, FlexProps } from "@chakra-ui/react";
-import { EthHalfIcon, WethHalfIcon } from "../../uikit";
-import { Text, TextProps } from "../../uikit/Text/Text";
+import { EthHalfIcon, WethHalfIcon } from "uikit";
+import { Text, TextProps } from "uikit/Text/Text";
 
 
 

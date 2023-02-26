@@ -4,9 +4,9 @@ import { connectStateResults } from "react-instantsearch-dom";
 import { StateResultsProvided } from "react-instantsearch-core";
 import uniqueId from "lodash/uniqueId";
 import { useTranslation } from "react-i18next";
-import { ChevronDown, Text } from "../../../../uikit";
+import { ChevronDown, Text } from "uikit";
 import { TextButton } from "../../../Buttons/TextButton";
-import { formatHits } from "../../../../utils/algolia";
+import { formatHits } from "utils/algolia";
 import CollectionHit, { CollectionHitPlaceholder, CollectionHitProps } from "./CollectionHit";
 
 export const COLLECTION_HITS_FETCH_PER_PAGE = { base: 4, sm: 10 };

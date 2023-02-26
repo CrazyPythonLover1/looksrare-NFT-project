@@ -6,8 +6,8 @@
 
 import { MenuList as ChakraMenuList, MenuItem, MenuButtonProps, MenuListProps } from "@chakra-ui/menu";
 import { Portal } from "@chakra-ui/react";
-import { Menu } from "../../uikit/Menu/Menu";
-import { MenuButton } from "../../uikit/Menu/MenuButton";
+import { Menu } from "uikit/Menu/Menu";
+import { MenuButton } from "uikit/Menu/MenuButton";
 
 
 

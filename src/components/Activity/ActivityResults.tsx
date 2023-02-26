@@ -21,13 +21,13 @@ import LazyLoad from "react-lazyload";
 import { UseInfiniteQueryResult } from "react-query";
 import { Flex, BoxProps } from "@chakra-ui/react";
 import flatten from "lodash/flatten";
-import { EVENTS_PER_PAGE } from "../../config/constants";
-import { SectionPlaceholder } from "../../uikit/Placeholder/SectionPlaceholder";
-import Text from "../../uikit/theme/components/Text";
-import { Event } from "../../types/graphql";
+import { EVENTS_PER_PAGE } from "config/constants";
+import { SectionPlaceholder } from "uikit/Placeholder/SectionPlaceholder";
+import Text from "uikit/theme/components/Text";
+import { Event } from "types/graphql";
 import { ActivityRow } from "./ActivityRow";
 import { Container } from "../Layout/Container";
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import useIntersectionObserver from "hooks/useIntersectionObserver";
 import { ActivityLoadingPlaceholder, ActivityLoadingSkeleton } from "./ActivityLoadingSkeleton";
 
 

@@ -10,9 +10,10 @@ import {
 import { last } from "lodash";
 import { useWeb3React } from "@web3-react/core";
 import { CollectionFilterItem, NFTAvatar, Pagination, RelativeCollectionsSort, User } from "types/graphql";
-import { baseQueryKeys, USER_PROFILE_AVATAR_NFTS_PER_PAGE } from "config";
+import { baseQueryKeys } from "config/reactQueries";
+import { USER_PROFILE_AVATAR_NFTS_PER_PAGE } from "config/constants"
+import { CollectionFilterInput } from "utils/graphql/collection"
 import {
-  CollectionFilterInput,
   getUser,
   getUserLeaderboardRelativeCollectionAddresses,
   getUserPoints,
@@ -23,7 +24,7 @@ import {
   UserAvatarUpdateInput,
   UserPoints,
   UserUpdateInput,
-} from "utils/graphql";
+} from "utils/graphql/user";
 import getTokensForProfile from "utils/graphql/getTokensForProfile";
 import { useUpdateUserProfileData } from "hooks/useUserProfileDisplay";
 import { COLLECTIONS_PAGINATION_FIRST } from "./collections";

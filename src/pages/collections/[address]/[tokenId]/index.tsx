@@ -4,7 +4,7 @@ import { NextSeo } from "next-seo";
 import { useWeb3React } from "@web3-react/core";
 import { getCloudinaryUrl } from "@looksrare/shared";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { currentChainInfo } from "config";
+import { currentChainInfo } from "config/chains";
 import { seoBaseImage } from "config/seo";
 import { headers } from "config/server";
 import { NFT } from "types/graphql";

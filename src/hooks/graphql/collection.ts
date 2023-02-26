@@ -1,5 +1,5 @@
 import { useMutation, UseMutationOptions, useQuery, useQueryClient, UseQueryOptions } from "react-query";
-import { baseQueryKeys } from "config";
+import { baseQueryKeys } from "config/reactQueries";
 import { Attribute, Collection } from "types/graphql";
 import {
   CollectionUpdateInput,
@@ -8,7 +8,7 @@ import {
   getCollectionAttributes,
   getCollectionWarningMeta,
   updateCollection,
-} from "utils/graphql";
+} from "utils/graphql/collection";
 
 export const collectionKeys = {
   ...baseQueryKeys("collection"),

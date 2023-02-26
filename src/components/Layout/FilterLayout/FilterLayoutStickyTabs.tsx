@@ -1,5 +1,5 @@
 import { Flex } from "@chakra-ui/layout";
-import { navHeightResponsive } from "../../../uikit/theme/global";
+import { navHeightResponsive } from "uikit/theme/global";
 import { FILTER_LAYOUT_TAB_Z_INDEX } from "./context";
 
 export const FilterLayoutStickyTabs: React.FC = ({ children, ...props }) => {

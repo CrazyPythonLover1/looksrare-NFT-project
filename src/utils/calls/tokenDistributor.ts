@@ -1,6 +1,6 @@
 import { BigNumber } from "ethers";
 import { getTokenDistributorContract } from "utils/contracts";
-import { SupportedProviders } from "types";
+import { SupportedProviders } from "types/config";
 
 /**
  * Tokens distributed per block for staking

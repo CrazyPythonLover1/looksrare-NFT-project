@@ -1,6 +1,6 @@
 import last from "lodash/last";
 import { useInfiniteQuery, UseInfiniteQueryOptions, useQuery, UseQueryOptions } from "react-query";
-import { baseQueryKeys } from "config";
+import { baseQueryKeys } from "config/reactQueries";
 import { Collection, CollectionBase, CollectionFilterItem, CollectionsSort, Pagination } from "types/graphql";
 import {
   getCollectionsBase,
@@ -10,7 +10,7 @@ import {
   CollectionFilterInput,
   CollectionLeaderboard,
   getCollectionLeaderboard,
-} from "utils/graphql";
+} from "utils/graphql/collection";
 import { collectionKeys } from "./collection";
 
 export const COLLECTIONS_PAGINATION_FIRST = 20;

@@ -33,8 +33,8 @@ import {
   // RainbowText,
   // StaticLogoLarge,
   // StaticLogoLargeLight,
-} from "../../uikit";
-import { Menu } from "../../uikit/Menu/Menu";
+} from "uikit";
+import { Menu } from "uikit/Menu/Menu";
 import { LanguageSwitcherButtons } from "../Buttons/LanguageSwitherButton/LanguageSwitcherButton";
 import { DesktopNextLink, MobileLink, MobileNextLink } from "./shared";
 

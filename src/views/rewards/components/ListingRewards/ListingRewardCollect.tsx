@@ -13,7 +13,7 @@ import { getErrorMessage } from "utils/errors";
 import { claim } from "utils/calls/multiRewardsDistributor";
 import { formatNumberToLocale, formatToSignificant, fromDecimals } from "utils/format";
 import { ConfirmInWalletModal } from "components/Modals/ConfirmInWalletModal";
-import { getDurationUntilNextDistribution } from "../../utils/getDurationUntilNextDistribution";
+import { getDurationUntilNextDistribution } from "utils/getDurationUntilNextDistribution";
 
 interface ClaimData {
   treeIds: number[];

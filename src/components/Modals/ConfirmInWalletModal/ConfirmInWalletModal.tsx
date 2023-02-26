@@ -4,8 +4,8 @@
 
 
 
-import Modal from "../../../uikit/Modal/Modal";
-import { ModalProps } from "../../../uikit/Modal/Modal";
+import Modal from "uikit/Modal/Modal";
+import { ModalProps } from "uikit/Modal/Modal";
 import { ConfirmInWalletModalBody, ConfirmInWalletModalBodyProps } from "./ConfirmInWalletModalBody";
 
 

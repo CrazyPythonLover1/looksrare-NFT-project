@@ -1,6 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { ModalBody, Button } from "../../../uikit";
+import { ModalBody, Button } from "uikit";
 import SearchInput from "./SearchInput";
 import SearchResults from "./SearchResults";
 // import AlgoliaSearchClient from "components/AlgoliaSearchClient";

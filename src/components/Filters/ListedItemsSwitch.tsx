@@ -9,8 +9,8 @@
 import { Box, Flex } from "@chakra-ui/layout";
 import { FormLabel } from "@chakra-ui/form-control";
 import { useTranslation } from "react-i18next";
-import {Text} from "../../uikit/Text/Text";
-import Switch from "../../uikit/Switch/Switch"
+import {Text} from "uikit/Text/Text";
+import Switch from "uikit/Switch/Switch"
 
 
 

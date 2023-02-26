@@ -1,7 +1,7 @@
 import { Divider, Flex, Skeleton } from "@chakra-ui/react";
 import { BigNumber } from "ethers";
 import { Trans, useTranslation } from "next-i18next";
-import { DAILY_FLOOR_THRESHOLD, DAILY_LISTING_REWARD_INTERVAL } from "config";
+import { DAILY_FLOOR_THRESHOLD, DAILY_LISTING_REWARD_INTERVAL } from "config/constants";
 import { TooltipText, LogoPolygonIcon, LogoRoundIcon, WarningFilledIcon } from "uikit";
 import { formatNumberToLocale, formatToSignificant } from "utils/format";
 import { getEstimatedLooksPerListing } from "utils/getEstimatedLooksPerListing";

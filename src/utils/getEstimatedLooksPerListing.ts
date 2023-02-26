@@ -1,4 +1,4 @@
-import { DAILY_LOOKS_DISTRIBUTED } from "config";
+import { DAILY_LOOKS_DISTRIBUTED } from "config/constants";
 
 export const getEstimatedLooksPerListing = (
   points: number | null,

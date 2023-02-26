@@ -12,7 +12,7 @@ import CalenderIcon from "./Icons/components/Calendar"
 import CheckboxCheckFilledIcon from "./Icons/components/CheckboxCheckedFilled"
 import CheckboxOutlineIcon from "./Icons/components/CheckboxOutline"
 import CheckmarkIcon from "./Icons/components/Checkmark"
-import CheckmarkFilled from "./Icons/components/CheckmarkFilled"
+import CheckmarkFilledIcon from "./Icons/components/CheckmarkFilled"
 import CheckmarkOutlineIcon from "./Icons/components/CheckmarkOutline"
 import ChevronDownIcon from "./Icons/components/ChevronDown" 
 import ChevronDown from "./Icons/components/ChevronDown" 
@@ -86,6 +86,14 @@ import WarningIcon from "./Icons/components/Warning"
 import WarningFilledIcon from "./Icons/components/WarningFilled"
 import WethIcon from "./Icons/components/Weth"
 import WethHalfIcon from "./Icons/components/WethHalf"
+import { Alert } from "./Alert/Alert"
+import { Badge } from "./Badge/Badge"
+import { ButtonToggle } from "./ButtonGroup/ButtonToggle"
+import { ButtonGroup } from "./ButtonGroup/ButtonGroup"
+import { Switcher } from "./ButtonGroup/Switcher"
+import { Input } from "./Input/Input"
+import { NumberInput } from "./Input/NumberInput"
+import { TextInput } from "./Input/TextInput"
 import { Text } from "./Text/Text"
 import { Link } from "./Link/Link"
 import Modal from "./Modal/Modal"
@@ -95,12 +103,15 @@ import ModalBody from "./Modal/ModalBody"
 import { Button } from "./Button/Button"
 import Popover from "./Popover/Popover"
 import Checkbox from "./Checkbox/Checkbox"
+import CheckboxCard from "./Checkbox/CheckboxCard"
+import Step from "./Step/Step"
+import Switch from "./Switch/Switch"
 import { TooltipText } from "./Text/Text"
 
 export {
     AddAltIcon, ArrowHorizontalIcon, ArrowLeftIcon, ArrowRightIcon, AuctionIcon,
     BackToTop, BigLooksIcon, BigLooksLightIcon, BlogIcon, CalenderIcon, CheckboxCheckFilledIcon,
-    CheckboxOutlineIcon, CheckmarkIcon, CheckmarkFilled, CheckmarkOutlineIcon, ChevronDownIcon, ChevronDown, ChevronLeftIcon,
+    CheckboxOutlineIcon, CheckmarkIcon, CheckmarkFilledIcon, CheckmarkOutlineIcon, ChevronDownIcon, ChevronDown, ChevronLeftIcon,
     ChevronRightIcon, ChevronUpIcon, ClockIcon, CloseIcon, CoinbaseIcon, CoinbaseLightIcon, CollectionIcon,
     CompassIcon, CopyFileIcon, DeleteIcon, DiamondIcon, DiscordIcon, DoubleArrowIcon, DownloadIcon, ErrorIcon,
     ErrorFilledIcon, EthIcon, FilterIcon, FormattingIcon, GiftIcon, GlobeIcon, HamburgerIcon, HelpIcon, InformationFilledIcon,
@@ -109,12 +120,24 @@ export {
     MailIcon, ManifoldCircleIcon, MaximizeIcon, MenuHorizontalIcon, MetaMaskIcon, MinimizeIcon, MintIcon, MisuseAltIcon,
     MultipleIcon, OfferIcon, OpenSeaIcon, PersonDissatisfiedIcon, PlayFilledAltIcon, RaritySniperIcon, ResetIcon,
     RestartIcon, SearchIcon, SendIcon, ShareIcon, ShoppingCartIcon, TelegramIcon, TwitterIcon, UserGroupIcon,
-    VerifiedIcon, ViewOffIcon, WalletIcon, WalletConnectIcon, WarningIcon, WarningFilledIcon, WethIcon, WethHalfIcon, Text, Link,
+    VerifiedIcon, ViewOffIcon, WalletIcon, WalletConnectIcon, WarningIcon, WarningFilledIcon, WethIcon, WethHalfIcon, 
+    Alert,
+    Badge,
+    ButtonToggle,
+    ButtonGroup,
+    Switcher,
+    Input,
+    NumberInput,
+    TextInput,
+    Text, Link,
     Modal,
-ModalFooterGrid,
-ModalBody,
-Button,
-Popover,
-Checkbox,
-TooltipText,
+    ModalFooterGrid,
+    ModalBody,
+    Button,
+    Popover,
+    Checkbox,
+    CheckboxCard,
+    Step,
+    Switch,
+    TooltipText,
 }

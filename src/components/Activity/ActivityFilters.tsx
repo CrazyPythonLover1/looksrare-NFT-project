@@ -12,9 +12,9 @@
 
 
 import { useTranslation } from "react-i18next";
-import { AuctionIcon } from "../../uikit";
-import { EventType } from "../../types/graphql";
-import { useEventTypeLabels } from "../../hooks/useEventTypeLabels";
+import { AuctionIcon } from "uikit";
+import { EventType } from "types/graphql";
+import { useEventTypeLabels } from "hooks/useEventTypeLabels";
 import { ButtonTogglesFilter } from "../Filters/ButtonTogglesFilter";
 import { useActivityFilter } from "../Filters/hooks/useActivityFilter";
 import { ToggleListButton } from "../Buttons/ToggleListButton";

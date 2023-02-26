@@ -7,9 +7,9 @@
 
 import { Box, Flex, FlexProps, useDisclosure } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import ChevronDown from "../../uikit/Icons/components/ChevronDown";
-import ChevronUp from "../../uikit/Icons/components/ChevronUp";
-import { Text } from "../../uikit/Text/Text";
+import ChevronDown from "uikit/Icons/components/ChevronDown";
+import ChevronUp from "uikit/Icons/components/ChevronUp";
+import { Text } from "uikit/Text/Text";
 import { Payouts } from "./Payouts";
 
 

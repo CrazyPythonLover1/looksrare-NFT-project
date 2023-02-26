@@ -2,10 +2,10 @@ import { gql } from "graphql-request";
 import { BigNumber, BigNumberish } from "ethers";
 import { CollectionFilterItem, User, Pagination, RelativeCollectionsSort, UserProfileDisplay } from "types/graphql";
 import { getAuthCookie } from "utils/cookies";
-import { COLLECTION_LEADERBOARD_TO_FETCH } from "config";
+import { COLLECTION_LEADERBOARD_TO_FETCH } from "config/constants";
 import { graphql } from "./graphql";
 import { collectionFilterItemFragment, UserFragment, userFragment } from "./fragments";
-import { CollectionFilterInput } from ".";
+import { CollectionFilterInput } from "./collection";
 
 interface UserResponse {
   user: UserFragment;

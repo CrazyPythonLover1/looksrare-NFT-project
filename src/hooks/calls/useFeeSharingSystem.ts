@@ -1,5 +1,5 @@
 import { BigNumber } from "ethers";
-import { useActiveProvider } from "hooks/useActiveProvider";
+import { useActiveProvider } from "../useActiveProvider";
 import { useQuery, UseQueryOptions } from "react-query";
 import {
   viewUserInfo,
@@ -10,7 +10,7 @@ import {
   viewCurrentWethRewardPerBlock,
   viewTotalShares,
 } from "utils/calls/feeSharingSystem";
-import { CONTRACT_BALANCE_INTERVAL } from "config";
+import { CONTRACT_BALANCE_INTERVAL } from "config/constants";
 
 export const BASE_FEE_SHARING_KEY = "fee-sharing";
 

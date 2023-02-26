@@ -28,15 +28,15 @@ import { useTranslation } from "react-i18next";
 import { useDisclosure, Fade, Box, Collapse, Spinner, Flex } from "@chakra-ui/react";
 import uniqueId from "lodash/uniqueId";
 import flatten from "lodash/flatten";
-import ChevronDown from "../../uikit/Icons/components/ChevronDown";
-import ChevronUp from "../../uikit/Icons/components/ChevronUp";
-import { ListIcon, CloseIcon } from "../../uikit";
-import { Button } from "../../uikit/Button/Button";
-import { COLLECTIONS_PAGINATION_FIRST } from "../../hooks/graphql/collections";
-import { useRelativeCollectionsSortLabels } from "../../hooks/useRelativeCollectionsSortLabels";
-import { useInfiniteUserRelativeCollections } from "../../hooks/graphql/user";
-import { CollectionFilterItem } from "../../types/graphql";
-import { formatToSignificant } from "../../utils/format";
+import ChevronDown from "uikit/Icons/components/ChevronDown";
+import ChevronUp from "uikit/Icons/components/ChevronUp";
+import { ListIcon, CloseIcon } from "uikit";
+import { Button } from "uikit/Button/Button";
+import { COLLECTIONS_PAGINATION_FIRST } from "hooks/graphql/collections";
+import { useRelativeCollectionsSortLabels } from "hooks/useRelativeCollectionsSortLabels";
+import { useInfiniteUserRelativeCollections } from "hooks/graphql/user";
+import { CollectionFilterItem } from "types/graphql";
+import { formatToSignificant } from "utils/format";
 import { useFilterLayout } from "../Layout/FilterLayout/hooks";
 import { CollectionPropertyButton } from "../Property/PropertyButtons";
 import { CollectionPropertyButtonLoadingPlaceholder } from "../Property/PropertyButtonLoadingPlaceholders";
@@ -44,7 +44,7 @@ import { PropertyGroupHeader } from "../Property/PropertyGroupHeader";
 import { DropdownMenu } from "../DropdownMenu/DropdownMenu";
 import { AttributesFilterList } from "./AttributesFilterList";
 import { useTokenFilter } from "./hooks/useTokenFilter";
-import { isAddressEqual } from "../../utils/guards";
+import { isAddressEqual } from "utils/guards";
 
 
 

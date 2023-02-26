@@ -4,7 +4,7 @@
 
 
 import { ButtonProps, forwardRef } from "@chakra-ui/react";
-import { Button } from "../../uikit/Button/Button";
+import { Button } from "uikit/Button/Button";
 
 
 interface Props extends ButtonProps {

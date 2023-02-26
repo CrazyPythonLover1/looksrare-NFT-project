@@ -9,10 +9,10 @@
 
 import { useWeb3React } from "@web3-react/core";
 import { useTranslation } from "react-i18next";
-import { Button, ButtonProps } from "../../uikit/Button/Button";
-import { LOCAL_STORAGE_EAGER_CONNECT } from "../../config/localStorage";
-import { removeAuthCookie } from "../../utils/cookies";
-import { removeLocalStorageItem } from "../../utils/localStorage";
+import { Button, ButtonProps } from "uikit/Button/Button";
+import { LOCAL_STORAGE_EAGER_CONNECT } from "config/localStorage";
+import { removeAuthCookie } from "utils/cookies";
+import { removeLocalStorageItem } from "utils/localStorage";
 
 
 

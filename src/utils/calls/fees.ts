@@ -6,7 +6,7 @@ import {
   getStrategyContract,
 } from "utils/contracts";
 import { TransactionResponse } from "@ethersproject/abstract-provider";
-import { SupportedProviders } from "types";
+import { SupportedProviders } from "types/config";
 
 /**
  * Retrieve the protocol fees for a specific strategy

@@ -1,4 +1,4 @@
-import { CONTRACT_BALANCE_INTERVAL } from "config";
+import { CONTRACT_BALANCE_INTERVAL } from "config/constants";
 import { useQuery, UseQueryOptions } from "react-query";
 import { getRewardsSubgraph, RewardsSubgraph } from "utils/subgraphs/looksStaking";
 

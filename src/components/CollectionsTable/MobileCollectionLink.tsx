@@ -13,10 +13,10 @@ import { MouseEventHandler } from "react";
 import { Flex, FlexProps } from "@chakra-ui/react";
 import { Avatar } from "../Avatar/Avatar";
 import Link from "next/link";
-import { Text } from "../../uikit/Text/Text";
-import { VerifiedIcon } from "../../uikit";
-import { ImageData } from "../../types/graphql";
-import { useOsCollectionImages } from "../../views/collections/components/hooks/useOsCollectionImages";
+import { Text } from "uikit/Text/Text";
+import { VerifiedIcon } from "uikit";
+import { ImageData } from "types/graphql";
+import { useOsCollectionImages } from "views/collections/components/hooks/useOsCollectionImages";
 
 
 

@@ -2,8 +2,8 @@ import { InjectedConnector } from "@web3-react/injected-connector";
 import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
 import { WalletLinkConnector } from "@web3-react/walletlink-connector";
 import { ethers } from "ethers";
-import { rpcUrl, APP_CHAIN_ID } from "../config/chains";
-// import { rpcUrl, APP_CHAIN_ID, PROVIDER_POLLING_INTERVAL_MS } from "../config/chains";
+import { rpcUrl, APP_CHAIN_ID } from "config/chains";
+// import { rpcUrl, APP_CHAIN_ID, PROVIDER_POLLING_INTERVAL_MS } from "config/chains";
 
 // Reformat chain info for connectors
 const RPC_URLS_BY_CHAIN_ID: { [chainId: number]: string } = { [APP_CHAIN_ID]: rpcUrl };

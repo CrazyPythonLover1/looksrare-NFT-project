@@ -19,11 +19,11 @@ import { useTranslation } from "react-i18next";
 import { useWeb3React } from "@web3-react/core";
 import MainView from "./AcknowledgementView";
 import { ConfirmInWalletModalBody } from "../../Modals/ConfirmInWalletModal/ConfirmInWalletModalBody";
-import { getErrorMessage } from "../../../utils/errors";
-import { useSubmitTransaction } from "../../../hooks/useSubmitTransaction";
-import { useToast } from "../../../hooks/useToast";
-import { cancelAllOrdersForSender } from "../../../utils/calls/exchange";
-import { getUserNonce } from "../../../utils/graphql/user";
+import { getErrorMessage } from "utils/errors";
+import { useSubmitTransaction } from "hooks/useSubmitTransaction";
+import { useToast } from "hooks/useToast";
+import { cancelAllOrdersForSender } from "utils/calls/exchange";
+import { getUserNonce } from "utils/graphql/user";
 
 
 

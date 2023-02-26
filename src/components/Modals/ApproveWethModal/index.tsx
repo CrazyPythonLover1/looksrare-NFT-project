@@ -8,8 +8,8 @@
 
 import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
-import Modal from "../../../uikit/Modal/Modal";
-import { ModalProps } from "../../../uikit/Modal/Modal";
+import Modal from "uikit/Modal/Modal";
+import { ModalProps } from "uikit/Modal/Modal";
 import ApproveWethModalBody from "./ApproveWethModalBody";
 
 

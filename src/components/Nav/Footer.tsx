@@ -1,7 +1,7 @@
 import { Box, Flex } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import { DiscordIcon, InstagramIcon, Link, Text, TwitterIcon } from "../../uikit";
-// import { LanguageSwitcherButtons } from "../../../components/Buttons";
+import { DiscordIcon, InstagramIcon, Link, Text, TwitterIcon } from "uikit";
+// import { LanguageSwitcherButtons } from "components/Buttons";
 import { LanguageSwitcherButtons } from "../Buttons/LanguageSwitherButton/LanguageSwitcherButton";
 
 const Footer: React.FC = () => {

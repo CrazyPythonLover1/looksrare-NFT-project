@@ -1,38 +1,38 @@
 import { useCallback, useEffect } from "react";
 import { useWeb3React } from "@web3-react/core";
 import { Box, Flex, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
-import { isAddressEqual } from "../../utils/guards";
-import { useGetWindowHash } from "../../hooks/useGetWindowHash";
-import { useEagerConnect } from "../../hooks/useEagerConnect";
-import usePreviousValue from "../../hooks/usePreviousValue";
-import { User } from "../../types/graphql";
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
-import { useOnStateChangeCallback } from "../../hooks/useOnStateChangeCallback";
-import { MultiselectContextProvider } from "../../components/Multiselect/context/multiselectContext";
+import { isAddressEqual } from "utils/guards";
+import { useGetWindowHash } from "hooks/useGetWindowHash";
+import { useEagerConnect } from "hooks/useEagerConnect";
+import usePreviousValue from "hooks/usePreviousValue";
+import { User } from "types/graphql";
+import useIntersectionObserver from "hooks/useIntersectionObserver";
+import { useOnStateChangeCallback } from "hooks/useOnStateChangeCallback";
+import { MultiselectContextProvider } from "components/Multiselect/context/multiselectContext";
 import {
   ActivityFilterProvider,
   TokenFilterProvider,
   useActivityFilter,
   useTokenFilter,
   useTokenFilterQuery,
-} from "../../components/Filters";
+} from "components/Filters";
 import {
   FilterLayoutContent,
   FilterLayoutProvider,
   FilterLayoutSidebar,
   FILTER_LAYOUT_CONTENT_PADDING,
   useFilterLayout,
-} from "../../components/Layout/FilterLayout";
-import AccountNftsPanel from "../../components/NftsPanel/AccountNftsPanel";
-import { FilterButton } from "../../components/Buttons";
-import MobileFilterModal from "../../components/Modals/MobileFilterModal";
-import AccountNftsFilters from "../../components/NftsPanel/AccountNftsFilters";
-import { MultiselectSidebar } from "../../components/Multiselect/MultiselectSidebar";
+} from "components/Layout/FilterLayout";
+import AccountNftsPanel from "components/NftsPanel/AccountNftsPanel";
+import { FilterButton } from "components/Buttons";
+import MobileFilterModal from "components/Modals/MobileFilterModal";
+import AccountNftsFilters from "components/NftsPanel/AccountNftsFilters";
+import { MultiselectSidebar } from "components/Multiselect/MultiselectSidebar";
 import { useMultiselect } from "components/Multiselect/hooks/useMultiselect";
 import { ActivityFilters, MobileActivityFilters } from "components/Activity";
 import { MultiselectItems } from "components/Multiselect/MultiselectItems";
 import { MultiselectFilterButton } from "components/Buttons/MultiselectFilterButton";
-import MobileMultiselectModal from "../../components/Modals/MobileMultiselectModal";
+import MobileMultiselectModal from "components/Modals/MobileMultiselectModal";
 import { handleScrollIntoView } from "components/Filters/utils/handleScrollIntoView";
 import { useAddressFromQuery } from "./hooks/useAddressFromQuery";
 import Header from "./components/Header";

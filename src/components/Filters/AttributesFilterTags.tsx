@@ -6,8 +6,8 @@
 
 
 import { Flex, TagLabel, TagCloseButton } from "@chakra-ui/react";
-import { Button } from "../../uikit/Button/Button";
-import { Tag } from "../../uikit/Tag/Tag";
+import { Button } from "uikit/Button/Button";
+import { Tag } from "uikit/Tag/Tag";
 import { useTranslation } from "react-i18next";
 import { useTokenFilter } from "./hooks/useTokenFilter";
 

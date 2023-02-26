@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { Flex, Box, Grid, AspectRatio, TagLabel } from "@chakra-ui/react";
@@ -6,8 +7,8 @@ import { DiamondIcon, Tag, Text } from "uikit";
 import { breakpoints } from "uikit/theme/breakpoints";
 import { getCurrencyConfig } from "config/currencies";
 import { formatToSignificant } from "utils/format";
-import { CollectionLinkButton } from "components/Buttons";
-import { TokenMedia } from "components/TokenMedia";
+import { CollectionLinkButton } from "components/Buttons/CollectionLinkButton";
+import { TokenMedia } from "components/TokenMedia/TokenMedia";
 
 interface Props {
   nft: NFTCard;

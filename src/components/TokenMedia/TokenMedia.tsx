@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Box, Skeleton, ResponsiveObject } from "@chakra-ui/react";
 import { ImageProps as NextImageProps } from "next/image";
 import noop from "lodash/noop";
-import { TOKEN_IMAGE_PLACEHOLDER_URI } from "config";
+import { TOKEN_IMAGE_PLACEHOLDER_URI } from "config/urls";
 import { Image, ImageProps } from "components/Image";
 import { Video, VideoProps } from "../Video";
 

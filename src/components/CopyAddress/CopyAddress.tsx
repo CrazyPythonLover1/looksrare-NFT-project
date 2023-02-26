@@ -13,14 +13,14 @@ import { useEffect, useState } from "react";
 import { Box, Flex, FlexProps, Spinner, useClipboard, useDisclosure } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 // import { Button, CopyFileIcon, LaunchOpenInNewIcon, Text, Popover, TooltipText, ButtonProps } from "uikit";
-import { Button, ButtonProps } from "../../uikit/Button/Button";
-import { CopyFileIcon, LaunchOpenInNewIcon } from "../../uikit";
-import { Text, TooltipText } from "../../uikit/Text/Text";
-import Popover from "../../uikit/Popover/Popover";
-import { getExplorerLink } from "../../utils/chains";
-import { formatAddress } from "../../utils/format";
+import { Button, ButtonProps } from "uikit/Button/Button";
+import { CopyFileIcon, LaunchOpenInNewIcon } from "uikit";
+import { Text, TooltipText } from "uikit/Text/Text";
+import Popover from "uikit/Popover/Popover";
+import { getExplorerLink } from "utils/chains";
+import { formatAddress } from "utils/format";
 import { IconLinkButton } from "../Buttons/IconLinkButton";
-import { useUserProfileDisplay } from "../../hooks/useUserProfileDisplay";
+import { useUserProfileDisplay } from "hooks/useUserProfileDisplay";
 
 
 

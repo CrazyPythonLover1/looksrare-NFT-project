@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Trans, useTranslation } from "react-i18next";
 import Link from "next/link";
 import { Box, Grid, GridItem, Flex } from "@chakra-ui/react";

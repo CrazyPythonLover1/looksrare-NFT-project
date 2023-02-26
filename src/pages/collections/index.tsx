@@ -4,7 +4,7 @@ import { dehydrate, QueryClient } from "react-query";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { headers } from "config/server";
-import { currentChainInfo } from "config";
+import { currentChainInfo } from "config/chains";
 import { getCollectionsBase } from "utils/graphql";
 import { CollectionsSort } from "types/graphql";
 import { collectionsKeys } from "hooks/graphql/collections";

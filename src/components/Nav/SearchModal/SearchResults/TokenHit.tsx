@@ -5,11 +5,11 @@ import { CHAIN_INFO } from "@looksrare/sdk";
 import { ConnectHitInsightsProvided } from "react-instantsearch-core";
 import { connectHitInsights } from "react-instantsearch-dom";
 import SearchInsights from "search-insights";
-import { Text, VerifiedIcon } from "../../../../uikit";
-import { APP_CHAIN_ID } from "../../../../config/chains";
-import { ALGOLIA_TOKENS_INDEX } from "../../../../config/algolia";
-import { AlgoliaEventNames } from "../../../../hooks/useSendAlgoliaEvent";
-import { Avatar } from "../../../../components/Avatar";
+import { Text, VerifiedIcon } from "uikit";
+import { APP_CHAIN_ID } from "config/chains";
+import { ALGOLIA_TOKENS_INDEX } from "config/algolia";
+import { AlgoliaEventNames } from "hooks/useSendAlgoliaEvent";
+import { Avatar } from "components/Avatar";
 
 export type TokenHitProps = {
   name: string;

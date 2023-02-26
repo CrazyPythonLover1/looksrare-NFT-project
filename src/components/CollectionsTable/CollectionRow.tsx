@@ -16,11 +16,11 @@ import { Flex, Grid, GridItem } from "@chakra-ui/react";
 import { Avatar } from "../Avatar/Avatar";
 import PercentChangeLabel from "../PercentChangeLabel";
 import Link from "next/link";
-import { CollectionBase } from "../../types/graphql";
-import { LogoPolygonIcon, VerifiedIcon } from "../../uikit";
-import { Text } from "../../uikit/Text/Text";
-import { formatNumberToLocale, formatToSignificant } from "../../utils/format";
-import { useOsCollectionImages } from "../../views/collections/components/hooks/useOsCollectionImages";
+import { CollectionBase } from "types/graphql";
+import { LogoPolygonIcon, VerifiedIcon } from "uikit";
+import { Text } from "uikit/Text/Text";
+import { formatNumberToLocale, formatToSignificant } from "utils/format";
+import { useOsCollectionImages } from "views/collections/components/hooks/useOsCollectionImages";
 import { Amount } from "./Amount";
 import { AmountVolumeDisplay, gridTemplateColumns } from "./shared";
 

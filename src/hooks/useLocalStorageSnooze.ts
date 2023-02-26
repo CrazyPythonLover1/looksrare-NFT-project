@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useWeb3React } from "@web3-react/core";
 import add from "date-fns/add";
 import { Duration } from "date-fns";
-import { getLocalStorageItem, setLocalStorageItem } from "../utils/localStorage";
+import { getLocalStorageItem, setLocalStorageItem } from "utils/localStorage";
 
 interface Props {
   baseKey: string;

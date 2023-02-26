@@ -1,9 +1,10 @@
 import { Box } from "@chakra-ui/react";
 import { useWeb3React } from "@web3-react/core";
-import { ConnectWalletButton } from "components/Buttons";
+import { ConnectWalletButton } from "components/Buttons/ConnectWalletButton";
 import { useTranslation } from "next-i18next";
 import { Text } from "uikit";
 
+// @ts-ignore
 export const ConnectWalletModalGuard: React.FC = ({ children }) => {
   const { t } = useTranslation();
   const { account } = useWeb3React();

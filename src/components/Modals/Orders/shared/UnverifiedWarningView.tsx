@@ -2,7 +2,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { Divider, Flex, Skeleton } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { LOCAL_STORAGE_SKIP_UNVERIFIED_WARNING, ROYALTY_FEE_WARNING_THRESHOLD } from "config";
+import { LOCAL_STORAGE_SKIP_UNVERIFIED_WARNING } from "config/localStorage";
+import { ROYALTY_FEE_WARNING_THRESHOLD } from "config/constants";
 import {
   Button,
   Checkbox,
@@ -20,7 +21,7 @@ import { getExplorerLink } from "utils/chains";
 import { formatAddress, formatFees } from "utils/format";
 import { getLocalStorageItem, setLocalStorageItem } from "utils/localStorage";
 import { useOsCollectionImages } from "views/collections/components/hooks/useOsCollectionImages";
-import { CollectionLinkButton } from "components/Buttons";
+import { CollectionLinkButton } from "components/Buttons/CollectionLinkButton";
 import { Avatar } from "components/Avatar";
 import { useCollectionCreatorFee } from "hooks/useFees";
 

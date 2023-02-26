@@ -1,11 +1,12 @@
 import { SupportedChainId, addressesByNetwork, Addresses } from "@looksrare/sdk";
+// @ts-ignore
 import { Strategy } from "types/config";
 import { APP_CHAIN_ID } from "./chains";
 
 export const ETH_ADDRESS = "0x0000000000000000000000000000000000000000";
 
 const hardhatAddresses: Addresses = {
-  LOOKS: process.env.LOOKS_RARE_TOKEN_ADDRESS,
+  LOOKS: process.env.LOOKS_RARE_TOKEN_ADDRESS || "",
   LOOKS_LP: process.env.MOCK_LP_ADDRESS,
   WETH: process.env.WETH_ADDRESS,
   ROYALTY_FEE_MANAGER: process.env.ROYALTY_FEE_MANAGER_ADDRESS,
@@ -38,8 +39,8 @@ const addressesByNetworkWithHardhat: { [chainId in SupportedChainId]: Addresses 
 export const addresses = addressesByNetworkWithHardhat[APP_CHAIN_ID];
 
 export const STRATEGIES_ADDRESS: Record<Strategy, string> = {
-  standard: addresses.STRATEGY_STANDARD_SALE,
-  collection: addresses.STRATEGY_COLLECTION_SALE,
-  private: addresses.STRATEGY_PRIVATE_SALE,
-  dutchAuction: addresses.STRATEGY_DUTCH_AUCTION,
+  standard: addresses?.STRATEGY_STANDARD_SALE,
+  collection: addresses?.STRATEGY_COLLECTION_SALE,
+  private: addresses?.STRATEGY_PRIVATE_SALE,
+  dutchAuction: addresses?.STRATEGY_DUTCH_AUCTION,
 };

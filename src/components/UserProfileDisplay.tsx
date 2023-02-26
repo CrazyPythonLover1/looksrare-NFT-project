@@ -1,5 +1,6 @@
 import { useUserProfileDisplay } from "hooks/useUserProfileDisplay";
-import { Text, TextProps } from "uikit";
+import { Text } from "uikit";
+import { TextProps } from "uikit/Text/Text"
 import { formatAddress } from "utils/format";
 
 interface UserProfileDisplayProps extends TextProps {

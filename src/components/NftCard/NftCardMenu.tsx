@@ -12,7 +12,7 @@ import {
 import { useWeb3React } from "@web3-react/core";
 import { useTranslation } from "next-i18next";
 import { CloseIcon, MenuHorizontalIcon } from "uikit";
-import { currentChainInfo } from "config";
+import { currentChainInfo } from "config/chains";
 import { Menu } from "uikit/Menu";
 import { useRefreshTokenMetadata } from "hooks/useRefreshTokenMetadata";
 import { NFTCard } from "types/graphql";

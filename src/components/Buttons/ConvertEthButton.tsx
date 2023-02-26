@@ -9,7 +9,7 @@
 import { useTranslation } from "react-i18next";
 import { useDisclosure } from "@chakra-ui/react";
 import { useWeb3React } from "@web3-react/core";
-import { Button } from "../../uikit/Button/Button";
+import { Button } from "uikit/Button/Button";
 import { ConvertEthModal } from "../Modals/ConvertEthModal";
 
 

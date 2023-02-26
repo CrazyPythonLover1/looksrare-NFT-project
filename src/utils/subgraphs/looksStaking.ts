@@ -1,5 +1,5 @@
 import { gql } from "graphql-request";
-import { currentChainInfo } from "config";
+import { currentChainInfo } from "config/chains";
 import { graphql } from "../graphql/graphql";
 
 export interface RewardsSubgraph {

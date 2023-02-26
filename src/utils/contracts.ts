@@ -15,9 +15,9 @@ import {
   AggregatorFeeSharingWithUniswapV3Abi,
   WETHAbi,
 } from "@looksrare/sdk";
-import { StakingPoolForUniswapV2TokensAbi } from "abis";
+// import { StakingPoolForUniswapV2TokensAbi } from "abis";
 import { addresses } from "config/addresses";
-import { SupportedProviders } from "types";
+import { SupportedProviders } from "types/config";
 
 /**
  * Generic Contract helper, please use specific helpers below
@@ -32,6 +32,7 @@ export const getContract = (library: SupportedProviders, address: string, ABI: a
   if (!ethers.utils.getAddress(address) || address === ethers.constants.AddressZero) {
     throw Error(`Invalid 'address' parameter '${address}'`);
   }
+  // @ts-ignore
   return new Contract(address, ABI, account ? library.getSigner(account) : library);
 };
 
@@ -55,9 +56,9 @@ export const getRoyaltyFeeSetterContract = (library: SupportedProviders, account
   return getContract(library, addresses.ROYALTY_FEE_SETTER, RoyaltyFeeSetterAbi, account);
 };
 
-export const getLPStakingPoolContract = (library: SupportedProviders, account?: string): Contract => {
-  return getContract(library, addresses.STAKING_POOL_FOR_LOOKS_LP, StakingPoolForUniswapV2TokensAbi, account);
-};
+// export const getLPStakingPoolContract = (library: SupportedProviders, account?: string): Contract => {
+//   return getContract(library, addresses.STAKING_POOL_FOR_LOOKS_LP, StakingPoolForUniswapV2TokensAbi, account);
+// };
 
 export const getStrategyContract = (library: SupportedProviders, address: string, account?: string): Contract => {
   return getContract(library, address, IExecutionStrategyAbi, account);

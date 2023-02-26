@@ -1,7 +1,7 @@
 import { BigNumber, constants } from "ethers";
 import { getERC20Contract } from "utils/contracts";
 import { TransactionResponse } from "@ethersproject/abstract-provider";
-import { SupportedProviders } from "types";
+import { SupportedProviders } from "types/config";
 
 /**
  * Return the ERC20 balance of an account

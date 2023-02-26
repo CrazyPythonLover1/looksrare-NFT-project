@@ -1,5 +1,5 @@
 import { createContext, useReducer } from "react";
-import { EventFilter, EventType } from "../../../types/graphql";
+import { EventFilter, EventType } from "types/graphql";
 
 export interface ActivityFilterContextReturn {
   filters: EventFilter;

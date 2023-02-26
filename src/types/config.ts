@@ -8,3 +8,11 @@ export interface CurrencyConfig {
 export interface TokenStandard {
   
 }
+
+export interface Currency {
+
+}
+
+export interface SupportedProviders {
+
+}

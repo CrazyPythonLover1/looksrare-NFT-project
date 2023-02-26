@@ -10,11 +10,11 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Divider, Flex, Checkbox } from "@chakra-ui/react";
-import { Button } from "../../../uikit/Button/Button";
-import { Text } from "../../../uikit/Text/Text";
-import ModalBody from "../../../uikit/Modal/ModalBody";
-import { ModalFooterGrid } from "../../../uikit/Modal/ModalFooterGrid";
-import { DeleteIcon } from "../../../uikit/index";
+import { Button } from "uikit/Button/Button";
+import { Text } from "uikit/Text/Text";
+import ModalBody from "uikit/Modal/ModalBody";
+import { ModalFooterGrid } from "uikit/Modal/ModalFooterGrid";
+import { DeleteIcon } from "uikit/index";
 
 
 

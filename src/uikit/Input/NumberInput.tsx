@@ -1,6 +1,6 @@
 import { InputProps, useBreakpointValue } from "@chakra-ui/react";
 import { ChangeEventHandler } from "react";
-import { Input } from ".";
+import { Input } from "./Input";
 
 export const onlyDecimalsRegExp = new RegExp(/^\d*\.?\d*$/);
 
